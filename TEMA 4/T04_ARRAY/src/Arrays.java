@@ -3,7 +3,7 @@ public class Arrays {
     public static void main(String[] args) {
 
         int[]numeros = new int[10];
-
+//545
 
         boolean [] aciertos=new boolean[5];
         String [] palabras = new String[3];
