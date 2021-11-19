@@ -16,7 +16,7 @@ public class Arrays {
 
         for (int i =0; i <=numeroDos.length-1;i++){
             System.out.println(numeroDos[i]);
-
+//AS
         }
 
     }
