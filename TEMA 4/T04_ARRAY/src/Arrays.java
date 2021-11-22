@@ -1,6 +1,6 @@
 public class Arrays {
 
-    public static void main(S   tring[] args) {
+    public static void main(String[] args) {
 
         int[]numeros = new int[10];
 //54
