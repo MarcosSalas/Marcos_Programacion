@@ -3,14 +3,18 @@ package Ejercicio_array_base;
 public class Ejercicio6 {
     public static void main(String[] args) {
 
-        int[] aleatorio = new int[20];
+        int aleatorio[] = new int[20];
         int numero = 0;
         int sumaModificaciones = 0;
         double media = 0;
 
+        for (int i = 0; i < aleatorio.length; i++) {
+            aleatorio[i]=(int) (Math.random()*31);
+            System.out.println("alea "+aleatorio[i]);
+        }
+
 
         for (int i = 0; i < aleatorio.length; i++) {
-
             if (aleatorio[i] == 6) {
                 aleatorio[i] = 8;
                 sumaModificaciones++;
