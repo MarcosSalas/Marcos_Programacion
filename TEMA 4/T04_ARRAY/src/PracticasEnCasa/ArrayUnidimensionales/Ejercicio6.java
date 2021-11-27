@@ -6,21 +6,48 @@ public class Ejercicio6 {
 
         Scanner longiArray= new Scanner(System.in);
         System.out.println("ingrese la LONGITUD");
-        int lgtudArray=longiArray.nextInt();
+        int nElementos=longiArray.nextInt();
 
-        int arrayUser []= new int[lgtudArray];
+        int arreglo []= new int[nElementos];
+        int aux;
 
-        for (int i = 0; i < arrayUser.length; i++) {
+        for (int i = 0; i < arreglo.length; i++) {
             System.out.println("Introduzca los datos del Array");
-            arrayUser[i]= longiArray.nextInt();
+            arreglo[i]= longiArray.nextInt();
         }
-        for (int i = 0; i < arrayUser.length; i++) {
 
-            if (arrayUser[i]==0) {
-
-
+        for (int i = 0; i < (nElementos - 1); i++) {
+            for (int j = 0; j < (nElementos - 1); j++) {
+                if (arreglo[j] > arreglo[j + 1]) {
+                    aux = arreglo[j];
+                    arreglo[j] = arreglo[j + 1];
+                    arreglo[j + 1] = aux;
+                }
             }
         }
+        System.out.println("\nArreglo ordenado en forma creciente:");
+        for (int i = 0; i < nElementos; i++) {
+            System.out.print(arreglo[i] + " - ");
+        }
+        System.out.println("");
+
+
+        System.out.println("\nArreglo ordenado en forma decreciente");
+        for (int i = (nElementos - 1); i >= 0; i--) {
+            System.out.print(arreglo[i] + " - ");
+        }
+
+        System.out.println("");
+
+
+
+
+
+
+
+
+
+
     }
 }
 
