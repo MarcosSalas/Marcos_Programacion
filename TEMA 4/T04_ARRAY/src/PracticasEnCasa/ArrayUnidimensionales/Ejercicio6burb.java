@@ -1,7 +1,7 @@
 package PracticasEnCasa.ArrayUnidimensionales;
 import java.util.Scanner;
 
-public class Ejercicio6 {
+class Ejercicio6_burb {
     public static void main(String[] args) {
 
         Scanner longiArray= new Scanner(System.in);
@@ -29,7 +29,7 @@ public class Ejercicio6 {
         for (int i = 0; i < nElementos; i++) {
             System.out.print(arreglo[i] + " - ");
         }
-        System.out.println("");
+       // System.out.println("");
 
 
         System.out.println("\nArreglo ordenado en forma decreciente");
@@ -37,7 +37,7 @@ public class Ejercicio6 {
             System.out.print(arreglo[i] + " - ");
         }
 
-        System.out.println("");
+    //    System.out.println("");
 
 
 
