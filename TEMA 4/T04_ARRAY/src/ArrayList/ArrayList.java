@@ -1,3 +1,5 @@
+package ArrayList;
+
 import java.util.Locale;
 
 public class ArrayList {
@@ -79,6 +81,10 @@ String fraseCompleta="Esto es una .frase completa, de un conjunto de palabras";
                                                                                      //tendriamos que preguntar,cual es la posicion de... en este caso directamente
                                                                                         //dame la posición
         System.out.println(dominio);
+
+        fraseCompleta.toCharArray(); // va a devolver la 'e', 'j','e' pero con espacio
+
+
 
     }
 }
