@@ -51,7 +51,6 @@ public class Ejercicio8 {
 */
 
 
-
             System.out.println("la mas grande es " + palabraMax);
             System.out.println("la mas pequeña es " + palabraMin);
 
