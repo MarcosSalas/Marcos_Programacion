@@ -1,8 +1,8 @@
-package ArrayList;
+package ArrayLi;
 
-import java.util.Locale;
+public class ArrayL {
+    public Object add;
 
-public class ArrayList {
     public static void main(String[] args) {
         String palabraTratar="Ejemplo de palabra";
         System.out.println(palabraTratar.toLowerCase());

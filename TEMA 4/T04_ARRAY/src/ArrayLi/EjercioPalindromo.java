@@ -1,4 +1,4 @@
-package ArrayList;
+package ArrayLi;
 
 public class EjercioPalindromo {
     public static void main(String[] args) {

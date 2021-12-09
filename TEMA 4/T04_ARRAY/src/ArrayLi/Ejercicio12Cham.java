@@ -1,4 +1,4 @@
-package ArrayList;
+package ArrayLi;
 
 public class Ejercicio12Cham {
     public static void main(String[] args) {
@@ -26,7 +26,7 @@ public class Ejercicio12Cham {
         }
 
 
-        for ( i = 0; i < equipos1.length; i++) {
+      /*  for ( i = 0; i < equipos1.length; i++) {
             if () {
             }
             System.out.println(eqp1Guardado[i]);
@@ -34,7 +34,7 @@ public class Ejercicio12Cham {
 
             //equipos1[equipFinal1]
 
-        }
+        }*/
 
 
 
