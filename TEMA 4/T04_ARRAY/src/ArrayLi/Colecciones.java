@@ -2,6 +2,7 @@ package ArrayLi;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.function.Predicate;
 
 public class Colecciones  {
 
@@ -78,7 +79,7 @@ public class Colecciones  {
 
         //siempre que se encuentre la posición devolvera 0 o un numero mayor,si devuelve-1 es que no encontró nada
 
-
+/*
         System.out.println("Ingrese la palabra a buscar");
         String palabBusc=ingrese.nextLine();
 
@@ -104,6 +105,8 @@ public class Colecciones  {
         }
 
 
+      */
+
         System.out.println(listaCosas);
 
         //REMOVE, borra el elemento
@@ -128,14 +131,29 @@ public class Colecciones  {
 
         //me falta el remove
 
-        for (int i = 0; i < listaCosas.size(); i++) {
-            if ((int)listaCosas.get(i).equals(6)) {
+       /* for (int i = 0; i < listaCosas.size(); i++) {
+            //si eres de la clase entero,hacemos esta pregunta
+            if (listaCosas.get(i) instanceof Integer) {
+
+            //solo cuando sea un nro
+            if ((int)listaCosas.get(i)==(6)) {
                 listaCosas.remove(i);
             }
+            }
         }
+*/
 
 
-
+ //removeif borra el filtro(predicado),una variable compleja x q está en mayúscula-es una interfaz
+        //si retorno true borra todos
+listaCosas.removeIf(new Predicate() {
+    @Override
+    //el Object o es ,que uno le da el objeto ,decide si es verdadero o falso
+    public boolean test(Object item) {
+        return item.equals(6);
+    }
+});
+        System.out.println(listaCosas);
 
 
 
