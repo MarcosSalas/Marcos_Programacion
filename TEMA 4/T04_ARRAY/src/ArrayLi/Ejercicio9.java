@@ -28,18 +28,19 @@ public class Ejercicio9 {
  //    char abecedario1=abecedario[(int)(Math.random()* abecedario.length)];//el match random seria int x q es una posicion no un char
 
         for (int i = 0; i < longitud; i++) {
-            System.out.println("Palabra " +i);
+            System.out.printf("Palabra %d %n",i+1);
             System.out.println("Cuantas letras tiene la palabra");
             int letras= pIntroducida.nextInt();
             String palabra ="";   //MISMA PREGUNTA DE ARRIBA
             for (int j = 0; j < letras; j++) {
-                char letrasAleatoria=abecedario
-                        [(int) (Math.random()*abecedario.length)];
+                char letrasAleatoria=abecedario[(int) (Math.random()*abecedario.length)];  //haciendo esto me da la posición EN LETRAS NO en numeros-SI SE VA A ASIGNAR A UNA VARIABLE
+                                                                                                                                                  // TIENE QUE SER DEL TIPO DEL ARRAR,ENTERO NO SE PUEDE.
+            //    System.out.printf("ver %s ",letrasAleatoria); //aca lo que me va a imprimir es la palabra ver tantas veces como indiquemos en la iteracion de letras
                 //POR CADA ITERACION TOMA UNA LETRA DEL ABECEDARIO , LA GUARDA EN letrasAleatoria, que ese a su vez lo guarda en cada posición del array PALABRA?
                 palabra+=letrasAleatoria;
 
             }
-            System.out.println(palabra);
+          //  System.out.println(palabra);
         }
 
 
