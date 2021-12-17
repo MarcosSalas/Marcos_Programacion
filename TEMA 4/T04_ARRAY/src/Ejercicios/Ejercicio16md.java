@@ -49,7 +49,7 @@ public class Ejercicio16md {
                 case 2:
                     if (listaCoches.size()>0) {
                         for (Object[] coche:listaCoches) {
-                            System.out.println("Marca "+coches[0]+"Modelo "+coche[1]+"Matricula "+coche[2]+"Coste "+coche[3]);
+                            System.out.println("Marca "+coche[0]+"Modelo "+coche[1]+"Matricula "+coche[2]+"Coste "+coche[3]);
 
                         }
                     }else {
