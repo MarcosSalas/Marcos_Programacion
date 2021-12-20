@@ -49,14 +49,16 @@ public class ListasHash {
                         // ELEMENTS() DEVUELVE TODOS LOS ELEMENTOS, SIRVE PARA IMPRIMIR EN HASH TODAS LAS POS,LOS ELEMENTS
                        // keys() devuelve enumeration , x eso a Enumeration var le asigno para las claves, pero preciso los elementos.
 
+        //      ****  SIEMPRE PARA IMPRIMIR TODAS LAS CLAVES EN HASHTABLE SE HACE CON EL WHILE
+
         System.out.println("Listado completo");
         Enumeration <Object>  /*(lo tipo del valor que tenga la key)*/    listaClaves =listaElementos.keys(); //LISTA DE TODAS LAS CLAVES
         while (listaClaves.hasMoreElements())/*devuelve un true*, si pogo listaClaves.hasMoreElements()==true es redundante/)*/ {
         //hay elemento siguiente
             Object clave =listaClaves.nextElement();
             Object elemento=listaElementos.get(clave);
-            System.out.println(elemento);  //la impresión sale de abajo para arriba, imprimo el objeto, seria como la pocisión en el arra
-
+            System.out.println(elemento);  //la impresión sale de abajo para arriba, imprimo el objeto, seria como la posición en el array
+            //el caso del array que no nos imprime, tengo que recorrerlo
         }
 
 
