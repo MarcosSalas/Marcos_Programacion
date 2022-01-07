@@ -12,14 +12,16 @@ public class Ejercicio17md {
 
 
         String nroTel;
-        String nom;
+        String nom,apellido,dni;
+
         boolean respuestaInt = false;
         boolean respuestaString = false;
 
 
+
         do {
 
-            System.out.println("Ingrese la opción deseada");
+            System.out.println("*** Ingrese la opción deseada ***");
             System.out.println("1 Agrega persona");
             System.out.println("2 Buscar persona");
             System.out.println("3 Borrar persona");
@@ -27,8 +29,6 @@ public class Ejercicio17md {
             System.out.println("5 Para eliminar todos los datos de las listas"); //esto no figura pero se lo agrego yo para practicar
             System.out.println("0 Para SALIR");
             opcion = ingTexto.nextInt(); //no olvidar esta linea si es que lo inicializo en 0
-
-            if (opcion >= 0 && opcion <= 5) {
 
 
                 switch (opcion) {
@@ -39,18 +39,23 @@ public class Ejercicio17md {
                             respuestaString = validarString(nom);
                         } while (respuestaString != true);
 
+                        do {
                         System.out.println("Ingrese el apellido ");
-                        String apellido = ingTexto.next();
+                        apellido = ingTexto.next();
+                        respuestaString = validarString(apellido);
+                        } while (respuestaString != true);
 
                         do {
                             System.out.println("Ingrese el teléfono ");
                             nroTel = ingTexto.next();
-
                             respuestaInt = validarInt(nroTel);
                         } while (respuestaInt != true);  //TODO ver porque no funciona
 
-                        System.out.println("Ingrese el dni ");
-                        int dni = ingTexto.nextInt();
+
+                            System.out.println("Ingrese el dni ");
+                            dni = ingTexto.next();
+
+
 
                         persona = new Object[]{nom, apellido, nroTel, dni}; //en el caso de declarar arriba como darle valor aqui, tengo que especificar que es Objet[];
                         listaUsuarios.add(persona);
@@ -60,7 +65,7 @@ public class Ejercicio17md {
 
 
                         System.out.println("Ingrese el dni ");
-                        dni = ingTexto.nextInt(); //reutilizamos la variable
+                        dni = ingTexto.next(); //reutilizamos la variable
                         boolean encontrado = false;
 
 
@@ -79,7 +84,7 @@ public class Ejercicio17md {
                         break;
                     case 3:
                         System.out.println("Ingrese el dni ");
-                        dni = ingTexto.nextInt(); //reutilizamos la variable
+                        dni = ingTexto.next(); //reutilizamos la variable
                         encontrado = false;
 
 
@@ -129,35 +134,37 @@ public class Ejercicio17md {
 
 
                 }
-            } else {
-                System.out.println("Nro incorrecto por favor introduzca el nro correcto \n");
+
+          if (opcion<0||opcion>5){
+                System.out.println("Número incorrecto, por favor ingrese un Nro del 0 al 5 \n");
             }
 
         } while (opcion != 0);
 
-        System.out.println("Adios");
+        System.out.println("Salió del programa");
 
     }
 
 
-    public static boolean validarInt(String nroTel) {
+    public static boolean validarInt(String nroTel) { //en este caso la variable se la tomaba como String por el ejemplo del video
         boolean respuesta;
 
-        if (nroTel.matches("[0-9]{10}")) {   //lo que está entre{} delimita la cantidad de nros que tiene que tener--lo que esta entre[]nos indica la condición, en este caso del 0al 9 quiere decir solo nros.
+        if (nroTel.matches("[0-9]{9}")) {   //lo que está entre{} delimita la cantidad de nros que tiene que tener--lo que esta entre[]nos indica la condición, en este caso del 0al 9 quiere decir solo nros.
             //       System.out.print("correcto,es un nro \n");
             respuesta = true;
         } else {
-            System.out.print("!Error, por favor ingrese solo nros que en total sean 10 \n");
+            System.out.print("!Error, por favor ingrese solo nros que en total sean 10\n");
             respuesta = false;
         }
         return respuesta;
+
     }
 
 
-    public static boolean validarString(String nom) {
+    public static boolean validarString(String CompTexto) {
         boolean respuesta;
 
-        if (nom.matches("^[A-Za-z]*$")) {   //lo que está entre{} delimita la cantidad de nros que tiene que tener--lo que esta entre[]nos indica la condición, en este caso del 0al 9 quiere decir solo nros.
+        if (CompTexto.matches("^[A-Za-z]*$")) {   //lo que está entre{} delimita la cantidad de nros que tiene que tener--lo que esta entre[]nos indica la condición, en este caso del 0al 9 quiere decir solo nros.
             //  System.out.println("correcto,es una letra \n");
             respuesta = true;
         } else {
