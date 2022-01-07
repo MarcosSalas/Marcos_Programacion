@@ -13,24 +13,28 @@ public class Ejercicio16md {
         int opcion = 0;
 
         do {
-            System.out.println("Ingresa la opcion deseada");
-            System.out.println("Opcion 1 Añade coches");
-            System.out.println("Opcion 2 Lista de coches");
-            System.out.println("Opcion 3 Buscar coche");
-            System.out.println("Opcion 4 Mostrar costes");
-            System.out.println("Opcion 5 Eliminar coche");
-            System.out.println("Opcion 6 Vaciar garaje");
+
+            System.out.println("*** INGRESA LA OPCIÓN DESEADA ***");
+            System.out.println("Opción 1 Añade coches");
+            System.out.println("Opción 2 Lista de coches");
+            System.out.println("Opción 3 Buscar coche");
+            System.out.println("Opción 4 Mostrar costes");
+            System.out.println("Opción 5 Eliminar coche");
+            System.out.println("Opción 6 Vaciar garaje");
+            System.out.println("Opción 0 PARA SALIR");
             opcion = entradaTexto.nextInt();
 
 
             switch (opcion) {
+                case 0:break;
+
                 case 1:
                     if (listaCoches.size() < 2) { //el pone 5 en el ejercicio para no tener que estar escribiendo los 10
                         System.out.println("Ingrese la marca");
                         String marca = entradaTexto.next();
                         System.out.println("Ingrese la modelo");
                         String modelo = entradaTexto.next();
-                        System.out.println("Ingrese la matricula");
+                        System.out.println("Ingrese la matrícula");
                         String matricula = entradaTexto.next();
                         System.out.println("Ingrese la coste");
                         int coste = entradaTexto.nextInt();
@@ -49,9 +53,10 @@ public class Ejercicio16md {
                 case 2:
                     if (listaCoches.size()>0) {
                         for (Object[] coche:listaCoches) {
-                            System.out.println("Marca "+coche[0]+"Modelo "+coche[1]+"Matricula "+coche[2]+"Coste "+coche[3]);
+                            System.out.println("Marca "+coche[0]+" Modelo "+coche[1]+" Matrícula "+coche[2]+" Coste "+coche[3]);
 
                         }
+                        System.out.println();
                     }else {
                         System.out.println("No hay coches");
                     }
@@ -68,7 +73,7 @@ public class Ejercicio16md {
                         //el equalIgnoreCase SOLO TOMA STRING, entonces hay que pasarlo
                         if (coche[2].toString().equalsIgnoreCase(matricula)) {
                             encontrado=true;
-                            System.out.println("Marca "+coches[0]+"Modelo "+coche[1]+"Matricula "+coche[2]+"Coste "+coche[3]);
+                            System.out.println("Marca "+coche[0]+" Modelo "+coche[1]+" Matrícula "+coche[2]+" Coste "+coche[3]+"\n");
                             break;
                         }
 
@@ -84,12 +89,12 @@ public class Ejercicio16md {
                         costeAcumulado+=(int)coche[3];
 
                     }
-                    System.out.println("Tu coste acumulado "+costeAcumulado);
+                    System.out.println("Tu coste acumulado "+costeAcumulado +"\n");
 
                     break;
                 case 5:
 
-                    System.out.println("Que matricula quieres buscar");
+                    System.out.println("Que matrícula quieres buscar");
                     matricula=entradaTexto.next();  //las mismas variables con valores redefinidos
                     encontrado= false;  //las mismas variables con valores redefinidos
 
@@ -104,7 +109,7 @@ public class Ejercicio16md {
 
                     }
                     if (!encontrado) {
-                        System.out.println("coche no encontrado ");
+                        System.out.println("Coche no encontrado ");
 
                     }
 
@@ -118,7 +123,13 @@ public class Ejercicio16md {
                     break;
 
             }
+            if (opcion>6||opcion<0){
+                System.out.println("Número incorrecto,ingrese el nro del 0 al 6 \n");
+            }
+
         } while (opcion != 0);
+
+        System.out.println("Salió del programa");
 
 
     }
