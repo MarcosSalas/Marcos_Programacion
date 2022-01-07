@@ -46,7 +46,7 @@ public class Ejercicio16md {
                         listaCoches.add(coches); //no olvidar que tengo que guardar el array en el arraylist
 
                     } else {
-                        System.out.println("No hay espacio");
+                        System.out.println("No hay espacio en la cochera");
                     }
 
                     break;
