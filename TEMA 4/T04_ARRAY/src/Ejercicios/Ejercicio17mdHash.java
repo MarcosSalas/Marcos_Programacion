@@ -32,7 +32,7 @@ public class Ejercicio17mdHash {
             System.out.println("0 Para SALIR");
             opcion = ingTexto.nextInt(); //no olvidar esta linea si es que lo inicializo en 0
 
-            if (opcion >= 0 && opcion <= 5) {
+
 
 
                 switch (opcion) {
@@ -86,9 +86,10 @@ public class Ejercicio17mdHash {
 
                             break;
                 }
-            }  else {
-                    System.out.println("Nro incorrecto por favor introduzca el nro correcto \n");
-                }
+            if (opcion<0 ||opcion>6) {
+                System.out.println("Nro incorrecto, ingrese un número del 0 al 6");
+            }
+
 
         } while (opcion != 0);
             }
