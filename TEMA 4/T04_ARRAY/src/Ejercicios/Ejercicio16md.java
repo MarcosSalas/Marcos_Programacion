@@ -26,17 +26,17 @@ public class Ejercicio16md {
 
 
             switch (opcion) {
-                case 0:break;
+                //case 0:break;
 
                 case 1:
                     if (listaCoches.size() < 2) { //el pone 5 en el ejercicio para no tener que estar escribiendo los 10
                         System.out.println("Ingrese la marca");
                         String marca = entradaTexto.next();
-                        System.out.println("Ingrese la modelo");
+                        System.out.println("Ingrese el modelo");
                         String modelo = entradaTexto.next();
                         System.out.println("Ingrese la matrícula");
                         String matricula = entradaTexto.next();
-                        System.out.println("Ingrese la coste");
+                        System.out.println("Ingrese el coste");
                         int coste = entradaTexto.nextInt();
 
                         coches = new Object[]{marca, modelo,matricula,coste};
@@ -65,7 +65,7 @@ public class Ejercicio16md {
 
                     break;
                 case 3:
-                    System.out.println("Que matricula quieres buscar");
+                    System.out.println("Que matrícula quieres buscar");
                     String matricula=entradaTexto.next();
                     boolean encontrado= false;
 
