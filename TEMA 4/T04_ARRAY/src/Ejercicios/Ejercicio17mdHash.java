@@ -1,5 +1,7 @@
 package Ejercicios;
 
+//ME QUEDABA POR PASAR EL EJERCICIO 16 Y 17 A HASHTABLE
+
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;

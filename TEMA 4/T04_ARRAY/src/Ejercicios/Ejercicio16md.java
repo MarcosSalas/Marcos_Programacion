@@ -3,6 +3,8 @@ package Ejercicios;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+//ME QUEDABA POR PASAR EL EJERCICIO 16 Y 17 A HASHTABLE
+
 //Ejercicios ArrayList / HashTable
 public class Ejercicio16md {
     public static void main(String[] args) {
