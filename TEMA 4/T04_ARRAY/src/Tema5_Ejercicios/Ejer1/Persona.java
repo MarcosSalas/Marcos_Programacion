@@ -1,5 +1,8 @@
 package Tema5_Ejercicios.Ejer1;
 
+// el static solamente se usa cuando necesitamos acceder desde cualquier sitio, no se pone casi nunca excepción del main, que siempre lo tiene
+
+
 public class Persona {
     //1ro variables
 
