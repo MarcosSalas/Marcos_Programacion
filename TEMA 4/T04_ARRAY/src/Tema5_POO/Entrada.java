@@ -10,7 +10,7 @@ public class Entrada {
     public static void main(String[] args) {
         //ámbito local
        // String nombre= "Borja";
-        Usuario usuario1=new Usuario();
+        Usuario usuario1=new Usuario(); //
 
         //nombre="Por defecto",correoElectronico=Por defecto,password=null,fecha=null,edad,=19;
 
@@ -18,7 +18,7 @@ public class Entrada {
 
         //nombre=null,correoElectronico=null,password=null,fecha=null,edad,=null;
 
-        Usuario usuario3= new Usuario("Borja","borja.martin@.es","pass");
+        Usuario usuario3= new Usuario("JoseLuis","borja.martin@.es","pass");
         //nombre=Borja,correoElectronico=borja.martin@.es,password=pass,fecha=null,edad,=null;
 
         Usuario usuario4=new Usuario("Borja","borja.martin@.es",19);
@@ -32,9 +32,17 @@ public class Entrada {
 
         usuario1.setPassword("contraSeña");
 
-       // System.out.println(usuario1.getPassword()); //este es el método con el nombre getPassword
-        
 
+       // System.out.println(usuario1.getPassword()); //este es el método con el nombre getPassword
+
+       // usuario1.mostrarDatos();
+       //  usuario4.mostrarDatos();
+
+       // System.out.println(usuario1.mostrarDatosRetorno());
+        usuario1.saludar("Borja");
+        usuario1.saludar("Luis");
+        usuario3.saludar(usuario1);
+        usuario1.saludar(usuario4);
 
     }
 

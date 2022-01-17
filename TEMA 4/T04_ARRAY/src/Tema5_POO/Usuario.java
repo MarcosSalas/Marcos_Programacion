@@ -37,6 +37,29 @@ public class Usuario {
 
     //3ro métodos
 
+    public void mostrarDatos(){                            // METODOS SIEMPRE EN MINUSCULA,SEGUNDA PALABR,MAYUS
+        System.out.println("NOMBRE "+nombre);
+        System.out.println("PASS "+password);
+        System.out.println("CORREO "+correoElectronico);
+        System.out.println("FECHA "+fecha);
+        System.out.println("EDAD "+edad);
+    }
+
+    public String mostrarDatosRetorno(){
+        return "Nombre " + nombre +"\n" + "Apelllido " + apellidos;  //devuelve un solo valor ,en este caso es uno solo x q está concatenado, la salvedad, tienen que ser para este caso todos String
+    }
+
+    public void saludar(String nombreSaludar){
+        System.out.println("Hola "+ nombreSaludar +" como estas");
+    }
+
+    public void saludar(Usuario usuario){ //le paso una variable de tipo usuario
+        System.out.println("Hola soy "+ nombre +" y saludo a "+ usuario.getNombre() +" como estas");
+    }
+
+
+
+
     //4to métodos especiales getters y setters
 
     //cuando pongo private arriba en las variables, la forma de poder pasar las variables se hace así
@@ -55,6 +78,7 @@ public class Usuario {
     public String getCorreoElectronico() {
         return correoElectronico;
     }
+
 
     public void setCorreoElectronico(String correoElectronico) {
         this.correoElectronico = correoElectronico;
