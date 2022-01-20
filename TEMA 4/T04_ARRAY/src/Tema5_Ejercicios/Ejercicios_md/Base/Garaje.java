@@ -1,4 +1,4 @@
-package Tema5_Ejercicios.Ejercicios_md;
+package Tema5_Ejercicios.Ejercicios_md.Base;
 
 public class Garaje {
 

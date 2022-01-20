@@ -1,4 +1,4 @@
-package Tema5_Ejercicios.Ejercicios_md;
+package Tema5_Ejercicios.Ejercicios_md.Base;
 
 public class Motor { // la lase con Mayúscula
     //1ro variables
@@ -10,7 +10,7 @@ public class Motor { // la lase con Mayúscula
     //hay DOS POSIVILIDADES DE CREAR UN CONSTRUCTOR USAMOS EL QUE NOS INTERESE
 
 
-    public Motor(int cv,int litros) {  //LOS CONSTRUCTORES SIEMPRE SON PUBLICOS Y NO TIENEN RETORNO y VAN EN MAYÚSCULA
+    public Motor(int cv,int litros) {  //LOS CONSTRUCTORES SIEMPRE SON PUBLICOS , NO TIENEN RETORNO , VAN EN MAYÚSCULA Y TIENEN QUE LLAMARSE IGUAL A LA CLASE
         this.cv=cv;
         this.litros=cv;
         //no hace falta inicializar la variable en los otros ,porque por defecto se inicializa en 0
@@ -23,7 +23,7 @@ public class Motor { // la lase con Mayúscula
 
 
 
-    //3ro métodos
+    //3ro métodos    -EN  MINUSCULA
 
 
     public int getLitros() {
