@@ -8,11 +8,12 @@ public class Profesor {
     nota.getAsignatura3().setCalificacion(Math.random()*11);
 
     }
+    /*
     public calcularMedia(Alumno media){
 
         return;
     }
-
+*/
 
 
 }

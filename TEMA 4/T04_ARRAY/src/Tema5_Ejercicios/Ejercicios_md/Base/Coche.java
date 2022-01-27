@@ -22,13 +22,11 @@ public class Coche {
 
     //3ro métodos
     public  void acumularAveria(double costeAverias){
+
         this.costeAverias+=costeAverias;
     }
 
-
     //4to métodos especiales getters y setters
-
-
 
 
     public Motor getMotor() {
