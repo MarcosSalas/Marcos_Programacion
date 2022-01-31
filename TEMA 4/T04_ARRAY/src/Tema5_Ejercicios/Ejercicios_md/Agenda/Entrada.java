@@ -32,8 +32,9 @@ public class Entrada {
         agenda.listarAgenda();
 
 
+        agenda.buscarPersona("1234");
 
-
+        agenda.agregarPersonas(new Persona());
 
 
     }
