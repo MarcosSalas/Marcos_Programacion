@@ -17,14 +17,17 @@ public class Circulo {
 
     //3ro métodos
 
-    public double areaCirculo() {    //  EN  MINUSCULA NO SE LE PONE LOS PARÁMETROS ADENTRO PORQUE TIENE UN NOMBRE DISTINTO UNO DE OTRO
-        area = ((Math.PI)*(radio * 2));
-        return area;
+    public void areaCirculo() {    //  EN  MINUSCULA NO SE LE PONE LOS PARÁMETROS ADENTRO PORQUE TIENE UN NOMBRE DISTINTO UNO DE OTRO  //RECORDAR SI NO DEVUELVE NADA PONER VOID
+        this.area = ((Math.PI)*(radio * 2));
     }
 
-    public double diametroCirculo() {  //  EN  MINUSCULA NO SE LE PONE LOS PARÁMETROS ADENTRO PORQUE TIENE UN NOMBRE DISTINTO UNO DE OTRO
-    diametro=2*radio;
-    return diametro;
+    public void diametroCirculo() {  //  EN  MINUSCULA NO SE LE PONE LOS PARÁMETROS ADENTRO PORQUE TIENE UN NOMBRE DISTINTO UNO DE OTRO
+    this.diametro=2*radio;
+    }
+    public void mostrarDatos(){
+        System.out.println("radio " + this.radio);
+        System.out.println("diámetro " + this.diametro);
+        System.out.println("área " + this.area);
     }
 
 //4to geter-seter

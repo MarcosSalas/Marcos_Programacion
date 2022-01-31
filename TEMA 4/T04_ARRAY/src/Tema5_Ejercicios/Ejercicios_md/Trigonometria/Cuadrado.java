@@ -15,14 +15,26 @@ public class Cuadrado {
     }
     //3Metodos
 
-    public double areaCuadrado(){ //  EN  MINUSCULA NO SE LE PONE LOS PARÁMETROS ADENTRO PORQUE TIENE UN NOMBRE DISTINTO UNO DE OTRO
-        area=base*altura;
-        return area;
+    public void areaCuadrado(){ //  EN  MINUSCULA NO SE LE PONE LOS PARÁMETROS ADENTRO PORQUE TIENE UN NOMBRE DISTINTO UNO DE OTRO
+        this.area=this.base*this.altura;
     }
-    public double perimetroCuadrado(){ //  EN  MINUSCULA NO SE LE PONE LOS PARÁMETROS ADENTRO PORQUE TIENE UN NOMBRE DISTINTO UNO DE OTRO
+    public void perimetroCuadrado(){ //  EN  MINUSCULA NO SE LE PONE LOS PARÁMETROS ADENTRO PORQUE TIENE UN NOMBRE DISTINTO UNO DE OTRO
+        this.perimetro=(2*altura+2*base);
+    }
+                    //******* DEJO ESTE DE ABAJO COMO EJEMPLO DE COMO ESTABA , QUE ESTABA MAL ********
+  /*  public double perimetroCuadrado(){ //  EN  MINUSCULA NO SE LE PONE LOS PARÁMETROS ADENTRO PORQUE TIENE UN NOMBRE DISTINTO UNO DE OTRO
         perimetro=(2*altura+2*base);
         return perimetro;
+    }*/
+
+    public void mostrarDatos(){
+        System.out.println("base " + this.base);
+        System.out.println("altura " + this.altura);
+        System.out.println("área " + this.area);
+        System.out.println("perímetro " + this.perimetro);
     }
+
+
 
     //4Seter-Geters
 

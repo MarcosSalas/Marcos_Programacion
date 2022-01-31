@@ -16,10 +16,17 @@ public class Triangulo {
 
     //3ro métodos
 
-    public double areaTriangulo (){ //  EN  MINUSCULA NO SE LE PONE LOS PARÁMETROS ADENTRO PORQUE TIENE UN NOMBRE DISTINTO UNO DE OTRO
-     area=(base*altura)/2;
-            return area;
+    public void areaTriangulo (){ //  EN  MINUSCULA NO SE LE PONE LOS PARÁMETROS ADENTRO PORQUE TIENE UN NOMBRE DISTINTO UNO DE OTRO
+     this.area=(this.base*this.altura)/2;  // APARENTEMENTE PARA PONER UN METODO QUE NO DEVUE
     }
+
+    public void mostrarDatos(){  // TIEN QUE MOSTRAR TODAS LAS VARIABLES SIN CALCULARLAS
+        System.out.println("Area " + this.area);
+        System.out.println("Base " + this.base);
+        System.out.println("Altura " + this.altura);
+    }
+
+
 
     //4Seter-Geters
 
