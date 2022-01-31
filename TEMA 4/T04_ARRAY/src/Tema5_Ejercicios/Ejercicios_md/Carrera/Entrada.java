@@ -1,4 +1,4 @@
-package Tema5_Ejercicios.Carrera;
+package Tema5_Ejercicios.Ejercicios_md.Carrera;
 
 public class Entrada {
     public static void main(String[] args) {
