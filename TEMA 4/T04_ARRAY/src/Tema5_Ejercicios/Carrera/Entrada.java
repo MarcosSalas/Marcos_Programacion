@@ -17,8 +17,8 @@ public class Entrada {
         coche.mostrarDatos();
         coche1.mostrarDatos();
 
-        coche.acelerar(20);
-        System.out.println("velocidad "+ coche.getKilometros());
+        coche.acelerar(20); // primero le paso los valores del método
+        System.out.println("velocidad "+ coche.getKilometros()); //luego llamo a la parte del método que me interesa
         coche1.acelerar(20);
         System.out.println("velocidad coche 2 " + coche1.getKilometros());
 
