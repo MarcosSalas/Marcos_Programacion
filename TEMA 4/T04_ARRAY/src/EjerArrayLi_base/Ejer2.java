@@ -22,7 +22,7 @@ public class Ejer2 {
         System.out.println(numerosEnt);
 
         double acumulador=0;
-        for (int item:numerosEnt) {
+        for (int item:numerosEnt) { // el tipo de valor que va a ser item : y que es lo que va a tomar despues de los :
             if (item>max) {
                 max=item;
             }

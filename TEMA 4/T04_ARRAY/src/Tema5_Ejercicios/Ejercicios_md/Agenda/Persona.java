@@ -9,23 +9,17 @@ private int nroTel;
 
     public  Persona()  //sin void ni nada, public y el nombre, comprobamos cuando queda amarillo
     {}
-    public  Persona(String nombre,int nroTel,String dni){
-        this.nombre=nombre;
+    public Persona(String nombre, String dni, int nroTel){ //PARA QUE PUEDA CREAR UNA PERSONA NECESITO ESTOS VALORES QUE TENGO ENTRE()
+        this.nombre=nombre;                                //Y EN LA AGENDA PARA AGREGAR UNA PERSONA ,NECESITO ANTES HABER CREADO LA PERSONA
         this.nroTel=nroTel;
         this.dni=dni;
     }
-
     // 3 métodos
-    public void mostrarDatos(String nombre,String apellido,String dni,int nroTel){
-        this.nombre=nombre;
-        this.apellido=apellido;
-        this.dni=dni;
-        this.nroTel=nroTel;
-
-        System.out.println("Nombre" + nombre);
-        System.out.println("Apellido" + apellido);
-        System.out.println("Dni" + dni);
-        System.out.println("Número de tel" + nroTel);
+    public void mostrarDatos(){
+        System.out.println("nombre " + this.nombre);
+        System.out.println("apellido " + this.apellido);
+        System.out.println("dni " + this.dni);
+        System.out.println("nroTel " + this.nroTel);
     }
 
     //4 geter seter     el arraylis lo inicializo cuando creo el constructor
