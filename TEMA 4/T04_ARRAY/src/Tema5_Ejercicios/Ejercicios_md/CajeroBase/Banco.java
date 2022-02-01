@@ -13,6 +13,7 @@ public Banco(){
 public Banco(String nombre ,String cif){
     this.nombre=nombre;
     this.cif=cif;
+    this.cuentaArrayList= new ArrayList(); //inicializo como en el Ejemplo de agenda
    //CONJUNTO DE CUENTAS VER
 }
 
