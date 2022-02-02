@@ -5,16 +5,22 @@ public class Cliente {
     private int pin;
     private double saldoInic;
 
+
     public Cliente() {
 
     }
 
-    public Cliente(String dni, int pin, double saldoInic) {
+    /*public Cliente(String dni, int pin, double saldoInic) {
         this.dni = dni;
         this.pin = pin;
         this.saldoInic = saldoInic;
-    }
+    }*/
 
+    public Cliente(String dni, int pin) {
+        this.dni = dni;
+        this.pin = pin;
+    }
+    
     public void mostrarDatos() {
         System.out.println(dni);
         System.out.println(saldoInic);

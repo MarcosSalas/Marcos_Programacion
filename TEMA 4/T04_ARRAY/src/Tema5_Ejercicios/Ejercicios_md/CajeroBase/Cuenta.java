@@ -4,21 +4,31 @@ import java.util.ArrayList;
 
 public class Cuenta {
 
-    private ArrayList<Cliente> clienteArrayList=new ArrayList<>();
+    private ArrayList<Cliente> clienteArrayList;
     private String dni;
-    private int pin;
-    private int saldo; //la cuenta es la que tiene el saldo
+    private int pin; // nroCuenta; el nro de cuenta lo genera desde el ISBN
+    private double saldo; //la cuenta es la que tiene el saldo
+
+
 
 
    // Banco banco=new Banco();  ver
     public Cuenta (){
+    this.clienteArrayList=new ArrayList();
+    }
 
+    public Cuenta(String dni, int pin,double saldo){
+        this.dni=dni;
+        this.pin=pin;
+        this.saldo=saldo;
+        //this.nroCuenta=nroCuenta;  el nro de cuenta lo genera desde el ISBN
     }
     public Cuenta(String dni, int pin){
         this.dni=dni;
         this.pin=pin;
+        //this.nroCuenta=nroCuenta;  el nro de cuenta lo genera desde el ISBN
     }
-
+    //                 *********************   ME FALTA PONER EL NUMERO DE CUENTA
 
     public void ingresarDinero(String dni, int pin, double cantidad){
 
@@ -44,5 +54,38 @@ public class Cuenta {
     }
 
 
+    //GETER-SETER
 
+    public ArrayList<Cliente> getClienteArrayList() {
+        return clienteArrayList;
+    }
+
+    public void setClienteArrayList(ArrayList<Cliente> clienteArrayList) {
+        this.clienteArrayList = clienteArrayList;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public int getPin() {
+        return pin;
+    }
+
+    public void setPin(int pin) {
+        this.pin = pin;
+    }
+
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
 }
