@@ -6,7 +6,7 @@ public class Cuenta {
 
     private ArrayList<Cliente> clienteArrayList;
     private String dni;
-    private int pin; // nroCuenta; el nro de cuenta lo genera desde el ISBN
+    private int pin,nroCta; // nroCuenta; el nro de cuenta lo genera desde el ISBN
     private double saldo; //la cuenta es la que tiene el saldo
 
 
@@ -16,6 +16,13 @@ public class Cuenta {
     public Cuenta (){
     this.clienteArrayList=new ArrayList();
     }
+
+    public Cuenta(int nroCta){
+        this.nroCta=nroCta;
+
+        //this.nroCuenta=nroCuenta;  el nro de cuenta lo genera desde el ISBN
+    }
+
 
     public Cuenta(String dni, int pin,double saldo){
         this.dni=dni;
@@ -49,7 +56,11 @@ public class Cuenta {
         }
     }
 
+
     public void verResumen(){
+
+        System.out.println("DNI " + getDni());
+        System.out.println("SALDO " + getSaldo());
         //MOSTRAR DATOS- NOMBRE ISBN Y SALDO
     }
 

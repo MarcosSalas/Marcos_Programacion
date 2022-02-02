@@ -24,13 +24,26 @@ public class Entrada {
         saldo=entradaText.nextDouble();
 
         Cuenta cuenta= new Cuenta (dni,pin,saldo);
+        Cuenta cancelaCuenta=new Cuenta(dni,pin);
         banco.abrirCuenta(cuenta);
 
-        System.out.println();
+        System.out.println ("Pin " +cuenta.getPin()+ " dni " + cuenta.getDni()+ " saldo " +cuenta.getSaldo());
 
      //   banco.abrirCuenta(dni,pin,saldo);
 
+        // CANCELAR CUENTA
 
+        banco.cancelarCuenta(cancelaCuenta);
+        // VER RESUMEN
+        System.out.println("VER RESUMEN");
+
+        cuenta.verResumen();
+        System.out.println( "ISBN " + banco.getIsbn());// EL ISBN LO TENGO Q PONER ACA X Q EN EL MÉTODO NO ME LO LEE
+        //ver nro de banco
+       /* System.out.println("ISBN");
+        System.out.println(banco.getIsbn());*/
+
+      banco.existeCuenta(dni);
 
     //bbva.abrirCuenta("y5259135s",1236,300);
 
