@@ -20,11 +20,9 @@ public class Entrada {
             //   coche1.mostrarDatos();
 
 
-            coche.acelerar(7900); // primero le paso los valores del método
-            coche1.acelerar(7900);
-
-
-        } while (coche.getKilometros() <= kmEtapa || coche1.getKilometros() <= kmEtapa);
+            coche.acelerar(10); // primero le paso los valores del método
+            coche1.acelerar(12);
+         } while (coche.getKilometros() <= kmEtapa || coche1.getKilometros() <= kmEtapa);
 
 
         System.out.println("velocidad coche 1 " + coche.getKilometros()); //luego llamo a la parte del método que me interesa
