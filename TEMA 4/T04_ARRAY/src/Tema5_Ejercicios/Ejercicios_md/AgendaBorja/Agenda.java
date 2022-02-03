@@ -6,12 +6,14 @@ public class Agenda {
     private ArrayList <Persona> listaPersonas;
 
     public Agenda() {
+
         this.listaPersonas = new ArrayList();
     }
 
     public void anadirPersona(Persona persona) {
 
         /*boolean exite = false;
+
         for (Persona item : listaPersonas) {
             if (item.getTelefono() == persona.getTelefono()) {
                 exite = true;

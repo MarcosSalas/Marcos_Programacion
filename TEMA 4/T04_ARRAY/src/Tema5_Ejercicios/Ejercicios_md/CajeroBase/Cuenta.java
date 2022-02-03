@@ -6,19 +6,19 @@ public class Cuenta {
 
     private ArrayList<Cliente> clienteArrayList;
     private String dni;
-    private int pin,nroCta; // nroCuenta; el nro de cuenta lo genera desde el ISBN
+    private int pin,isbn; // nroCuenta; el nro de cuenta lo genera desde el ISBN
     private double saldo; //la cuenta es la que tiene el saldo
 
 
 
 
-   // Banco banco=new Banco();  ver
+
     public Cuenta (){
     this.clienteArrayList=new ArrayList();
     }
 
-    public Cuenta(int nroCta){
-        this.nroCta=nroCta;
+    public Cuenta(int isbn){
+        this.isbn=isbn;
 
         //this.nroCuenta=nroCuenta;  el nro de cuenta lo genera desde el ISBN
     }
@@ -30,6 +30,14 @@ public class Cuenta {
         this.saldo=saldo;
         //this.nroCuenta=nroCuenta;  el nro de cuenta lo genera desde el ISBN
     }
+
+    public Cuenta (String dni, int pin,double saldo,int isbn){
+        this.dni=dni;
+        this.pin=pin;
+        this.saldo=saldo;
+        this.isbn=isbn;
+    }
+
     public Cuenta(String dni, int pin){
         this.dni=dni;
         this.pin=pin;
@@ -91,6 +99,13 @@ public class Cuenta {
         this.pin = pin;
     }
 
+    public int getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(int isbn) {
+        this.isbn = isbn;
+    }
 
     public double getSaldo() {
         return saldo;

@@ -14,13 +14,13 @@ public class Entrada {
         //agenda.buscarPersona(1236);
         // lista = Borja, Luis
 
-        /*agenda.listar();
-        if (agenda.borrarPersona(1234)){
+        agenda.listar();
+       if (agenda.borrarPersona(1234)){
         }else {
         }
-        // si has borrado a la persona saca un mensaje de
+       // si has borrado a la persona saca un mensaje de
         // borrado correctamente
         System.out.println("Despues de borrar");
-        agenda.listar();*/
+        agenda.listar();
     }
 }
