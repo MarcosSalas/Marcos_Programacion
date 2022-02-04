@@ -7,7 +7,7 @@ public class Entrada {
         Coche coche = new Coche();
         Coche coche1 = new Coche("Astra", "KRE4833", 110);
 
-        do {
+        do { 
 
             coche.setModelo("leon");
             coche.setMatricula("KEW4286");
