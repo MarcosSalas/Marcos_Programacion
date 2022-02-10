@@ -17,7 +17,7 @@ public class Jugador {
         this.cartones=new ArrayList<>();
 
     }
-
+/*
     public void verCartones(){
         for (Carton cartones:cartones) {
             System.out.println("Carton " + contador);
@@ -30,7 +30,7 @@ public class Jugador {
         //recorro todos los cartones veo los n
 
 
-    }
+    }*/
 public void recargarSaldo(int cantidad){
     if (cantidad>0){
         this.saldo+=cantidad;
