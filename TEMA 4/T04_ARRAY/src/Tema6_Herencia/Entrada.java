@@ -12,5 +12,15 @@ public class Entrada {
         Electrico electrico=new Electrico("234b","234",200,2500,256);
 
 
+        //PONER COCHE.... BORRADO CORRECTAMENTE
+        // SI NO ENCUENTRO LA MATRICULA ,COCHE NO ENCONTRADO
+        // si quiero agregar un coche tengo que poner los valores del coche y el concesionario para poder utilizar la clase conces
+        Concesionario concesionario=new Concesionario();
+        Utilitario utilitario=new Utilitario("234b","234",200,2500,256);
+
+
+
+
+
     }
 }
