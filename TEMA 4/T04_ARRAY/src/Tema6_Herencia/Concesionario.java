@@ -38,16 +38,17 @@ public class Concesionario {
         for (int i = 0; i < arrayL_Coche.size(); i++) {
             if (arrayL_Coche.get(i).getMatricula().equalsIgnoreCase(matricula)) {
                 System.out.println("El coche ya existe");
-                existe = true;
+             //   existe = true;
                 break;
             }
-        return ;
+      //  return ;
 
     }
 
 
 
 }
+
 
 
 
