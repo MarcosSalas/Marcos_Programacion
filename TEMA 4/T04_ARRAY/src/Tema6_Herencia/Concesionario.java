@@ -1,7 +1,7 @@
 package Tema6_Herencia;
 
 import java.util.ArrayList;
-
+/*  VER LUEGO DONDE ESTÁ EL ERROR
 public class Concesionario {
     private ArrayList<Coche> arrayL_Coche; // deportivo utilitario , tienen en comun que son de tipo Coche.. es x eso q se tipa asi
     private String matricula;
@@ -45,14 +45,10 @@ public class Concesionario {
 
     }
 
+    }
 
 
-}
-
-
-
-
-
+*/
 
 
 
