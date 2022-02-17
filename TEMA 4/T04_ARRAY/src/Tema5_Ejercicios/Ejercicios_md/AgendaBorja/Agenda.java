@@ -85,15 +85,15 @@ public class Agenda {
         }
     }
 
-    private Persona exitePersona(int telefono) {
+    private Persona exitePersona(int telefono) {  // esto va a devolver si la persona existe o no
 
         Persona persona = null;
 
-        for ( Persona item: listaPersonas) {
-            if (item.getTelefono() == telefono){
+        for ( Persona a: listaPersonas) {
+            if (a.getTelefono() == telefono){
                 //persona = item;
                 //break;
-                return item;
+                return a;
             }
         }
 
