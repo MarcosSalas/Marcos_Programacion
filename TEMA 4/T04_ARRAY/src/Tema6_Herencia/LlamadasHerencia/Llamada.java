@@ -15,7 +15,16 @@ public abstract class Llamada {
 
     }
 
-    public abstract void calcular_coste();  //TENGO QUE PONER ABSTRACTO SE DEFINE ASI, PARA QUE TODAS LAS QUE HEREDEN TENGAN QUE CALCULAR HACIENDO CLICK CON EL BOTON DEL ERROR
+    protected abstract void calcular_coste();  //TENGO QUE PONER ABSTRACTO SE DEFINE ASI, PARA QUE TODAS LAS QUE HEREDEN TENGAN QUE CALCULAR HACIENDO CLICK CON EL BOTON DEL ERROR
+
+    public void mostrarDatos(){  // si lo quiero cambiar lo sobreescribo desde la clase hija sino desde la entrada la puedo llamar directamente
+        System.out.println("Origen");
+        System.out.println("Destino");
+        System.out.println("");
+        System.out.println();
+
+    }
+
 
 
 
