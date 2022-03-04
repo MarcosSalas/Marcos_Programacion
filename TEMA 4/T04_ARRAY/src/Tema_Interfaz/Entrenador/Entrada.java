@@ -1,5 +1,6 @@
-import ProyectoEnumInterfaz.Posicion;
-import ProyectoEnumInterfaz.Vocacion;
+package Tema_Interfaz.Entrenador;
+
+import Tema_Interfaz.Proyecto_Enum.Posicion;
 
 import java.util.Scanner;
 

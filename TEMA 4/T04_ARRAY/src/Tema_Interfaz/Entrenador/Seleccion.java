@@ -1,3 +1,5 @@
+package Tema_Interfaz.Entrenador;
+
 import java.util.ArrayList;
 
 public class Seleccion {

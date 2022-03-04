@@ -1,4 +1,4 @@
-package ProyectoEnumInterfaz;
+package Tema_Interfaz.Proyecto_Enum;
 
 public class Ejemplo {
     Equipo equipo1=Equipo.Getafe;

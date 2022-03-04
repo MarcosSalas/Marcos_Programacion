@@ -1,4 +1,4 @@
-package ProyectoEnumInterfaz;
+package Tema_Interfaz.Proyecto_Enum;
 
 public class Jugador extends  Persona implements Seleccionable{
     final String posicion;

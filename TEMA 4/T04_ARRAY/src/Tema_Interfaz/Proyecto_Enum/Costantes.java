@@ -1,4 +1,4 @@
-package ProyectoEnumInterfaz;
+package Tema_Interfaz.Proyecto_Enum;
 
 public interface Costantes { //se da por hecho si esta en una interface q todo sea publico y final
 

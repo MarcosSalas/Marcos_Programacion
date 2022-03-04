@@ -1,5 +1,6 @@
-public class Persona {
+package Tema_Interfaz.Entrenador;
 
+public class Persona {
     protected String nombre,apellido,dni;
     protected int edad;
     protected double sueldo;
@@ -18,9 +19,9 @@ public class Persona {
 
     //Metod
 
-public void calcularSueldo(){
+    public void calcularSueldo(){
 
-}
+    }
 
 
 
@@ -78,4 +79,6 @@ public void calcularSueldo(){
     public void setEdad(int edad) {
         this.edad = edad;
     }
+
+
 }

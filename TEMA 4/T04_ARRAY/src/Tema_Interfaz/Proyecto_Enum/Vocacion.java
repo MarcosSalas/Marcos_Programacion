@@ -1,4 +1,4 @@
-package ProyectoEnumInterfaz;
+package Tema_Interfaz.Proyecto_Enum;
 
 public enum Vocacion {
 

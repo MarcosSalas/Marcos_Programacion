@@ -1,4 +1,6 @@
-public class Jugador extends Persona{
+package Tema_Interfaz.Entrenador;
+
+public class Jugador {
 
     public String posicion;
     private double calculoSueldo=(0.25*100);
@@ -45,10 +47,6 @@ public class Jugador extends Persona{
     public void setCalculoSueldo(double calculoSueldo) {
         this.calculoSueldo = calculoSueldo;
     }
+
+
 }
-
-
-
-
-
-
