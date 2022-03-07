@@ -1,5 +1,7 @@
 package Tema_Interfaz.Proyecto_Enum;
 
+import Tema_Interfaz.Ejerciocio5_InterfazInicial.Elemento;
+
 public enum Posicion {
 
 // . name() para sacar esta info
@@ -31,6 +33,13 @@ portero("Portero",100) ,defensa("Defensa",300),medio("medio",600),deantero("dela
 
     public void setValor(int valor) {
         this.valor = valor;
+    }
+
+    public static class Audio extends Elemento {
+
+        String soporte;
+        Double duración;
+
     }
 }
 /*  NO ESTARIA BIEN, NO SERIA OPTIMO

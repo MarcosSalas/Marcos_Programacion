@@ -2,29 +2,27 @@ package Tema_Interfaz.Proyecto_Enum;
 
 public enum Equipo {
 
-    //Costruidos
-    Barcelona("FC.Barcelona",100000),Madrid("Real Madrid",1000),Atletico,Sevilla,Getafe,Alcorcon("Alcorcon",2000);
+    // construidos
+    Barcelona("FC. Barcelona",10000), Madrid("Real Madrid",20000),
+    Atletico, Sevilla, Getafe, Alcorcon("Alcorcon",500);
 
-    //variables
+    // variables
     String nombre;
     int presupuesto;
 
-
-    //constructores
-
- Equipo (String nombre,int presupuesto){
-     this.nombre=nombre;
-     this.presupuesto=presupuesto;
-
+    // constructores
+    Equipo(String nombre, int presupuesto){
+        this.nombre = nombre;
+        this.presupuesto = presupuesto;
     }
-Equipo(){} //Constructor vacío para el caso de Atletic,Getafe,etc
+    Equipo(){
+    }
 
-    //merodos
+    // metodos
 
     public void mostrarDatos(){
         System.out.println(nombre);
         System.out.println(presupuesto);
-
     }
 
     public String getNombre() {
