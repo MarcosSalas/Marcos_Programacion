@@ -1,7 +1,6 @@
 package Tema_Interfaz.Proyecto_Enum;
 
 
-
 public class Canterano extends Persona implements Seleccionable{
 
     private int posibilidades;
@@ -42,6 +41,8 @@ public class Canterano extends Persona implements Seleccionable{
 
     @Override
     public void repartirPrima() {
-        this.sueldo+=200;
+        this.sueldo += 200;
+        System.out.println("Repartida a canterano una prima de 200");
     }
+
 }

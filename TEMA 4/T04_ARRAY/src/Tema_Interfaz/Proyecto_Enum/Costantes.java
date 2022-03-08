@@ -4,7 +4,7 @@ public interface Costantes { //se da por hecho si esta en una interface q todo s
 
     //variables
 
-    double IRP=0.15;
+    double IRPF=0.15;
     double IVA=0.21;
     String nombre ="Empresa S.A";
     //metodos-defaults
