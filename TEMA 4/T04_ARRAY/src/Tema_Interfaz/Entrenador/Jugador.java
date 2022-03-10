@@ -1,6 +1,6 @@
 package Tema_Interfaz.Entrenador;
 
-public class Jugador {
+public class Jugador extends Persona{
 
     public String posicion;
     private double calculoSueldo=(0.25*100);
@@ -15,6 +15,7 @@ public class Jugador {
     }
 
     public Jugador(){}
+
 
 
 

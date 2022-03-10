@@ -1,6 +1,6 @@
 package Tema_Interfaz.Entrenador;
 
-import Tema_Interfaz.Proyecto_Enum.Posicion;
+import Tema_Interfaz.Proyecto_Enum.Posiciones;
 
 import java.util.Scanner;
 
@@ -25,7 +25,7 @@ public class Entrada {
         nSeleccion=entrTexto.next();
 
         Seleccion seleccion = new Seleccion(nSeleccion);
-        Posicion posicionDefensa=Posicion.Jugador;
+      // Posiciones posicionDefensa=Posiciones.Jugador;  . JUGADOR NO IRIA PORQUE LO QUE TIENE EN JUGADOR ES DEFENSA ETC..
 
 
         System.out.println("Ingrese el nombre del jugador");
@@ -46,7 +46,7 @@ public class Entrada {
         Jugador jugador3= new Jugador(nombre,apellido,dni,edad,sueldo,posicion);
         Jugador jugador4= new Jugador(nombre,apellido,dni,edad,sueldo,posicion);
 
-        Posicion.Jugador.name(); //la forma de costruir correctamente es esta, VER EN GITHUD
+       // Posiciones.Jugador.name(); //la forma de costruir correctamente es esta, VER EN GITHUD  SALE ERROR PORQUE COPIE MAL
 
 
 
@@ -78,6 +78,31 @@ public class Entrada {
             seleccion.contratarEntrenador(entrenador1);
 
 
+
+
+
+            // **********************GUIT BORJA
+
+/*
+        Persona persona = new Jugador("Borja","Martin",123,Posiciones.delantero.getDefinicion());
+        Jugador jugador = new Jugador("Borja1","Martin1",123,Posiciones.delantero.getDefinicion());
+        Persona persona1 = new Entrenador("Entrenador","Apellido",1000,Vocaciones.defensivo.name());
+        Entrenador entrenador = new Entrenador("Entrenador","Apellido",1000,Vocaciones.ofensivo.name());
+        Canterano canterano = new Canterano("Canterano","Apellido",100,60);
+
+        Seleccionable seleccionable = new Jugador("Nombre","Apellido",123,Posiciones.defensa.getDefinicion());
+
+        Seleccion seleccion = new Seleccion();
+        seleccion.addPersona(jugador);
+        seleccion.addPersona(jugador);
+        seleccion.addPersona(jugador);
+        seleccion.addPersona(jugador);
+        seleccion.addPersona(jugador);
+        seleccion.addPersona(canterano);
+        seleccion.addPersona(entrenador);
+
+        seleccion.comprobarAtaque();
+        seleccion.repatirPrimaSeleccion();*/
 
 
 

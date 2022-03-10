@@ -1,23 +1,28 @@
 package Tema_Interfaz.TrabajadoresInterfaz_enClase;
 
-public abstract class  Persona  {
-    String nombre,apellido,dni;
+public abstract class Persona {
 
+    protected String dni, nombre, apellido;
 
-    public Persona(String nombre, String apellido, String dni) {
+    public Persona(){}
+    public Persona(String dni, String nombre, String apellido) {
+        this.dni = dni;
         this.nombre = nombre;
         this.apellido = apellido;
+    }
+
+    public void mostrarDatos(){
+        System.out.println("nombre: "+nombre);
+        System.out.println("apellido: "+apellido);
+        System.out.println("dni: "+dni);
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
         this.dni = dni;
-    }
-
-    public Persona() {
-    }
-
-    public void mostrardatos() {
-        System.out.println("Nombre " + nombre);
-        System.out.println("Apellido " + apellido);
-        System.out.println("Dni " + dni);
-
     }
 
     public String getNombre() {
@@ -34,13 +39,5 @@ public abstract class  Persona  {
 
     public void setApellido(String apellido) {
         this.apellido = apellido;
-    }
-
-    public String getDni() {
-        return dni;
-    }
-
-    public void setDni(String dni) {
-        this.dni = dni;
     }
 }

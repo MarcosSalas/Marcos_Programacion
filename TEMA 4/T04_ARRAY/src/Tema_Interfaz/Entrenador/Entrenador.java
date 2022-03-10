@@ -1,6 +1,6 @@
 package Tema_Interfaz.Entrenador;
 
-public class Entrenador {
+public class Entrenador extends Persona {
 
     private double calculoSueldo=(0.50*100);
 
