@@ -27,13 +27,14 @@ public class Accionista  extends Persona implements Comision{
         this.porAcciones = porAcciones;
     }
 
-    @Override
-    public double votar(int voto) {
-        return 0;
+    public double votar() {
+        double voto =(Math.random()*11);
+        return voto;
     }
 
     @Override
-    public void obtenerBeneficio() {
+    public void obtenerBeneficio(int beneficio ) {
+        System.out.println("Beneficio " + beneficio*0.30);
 
     }
 }
