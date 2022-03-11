@@ -5,7 +5,7 @@ public class DVD extends Elemento {
     int anioEdicion;
     String director,actores;
     private Tipo genero;
-    
+
 
 
     public DVD(int id, String seccion, String titulo, boolean estado, int anioEdicion, String director, String actores, Tipo genero) {
