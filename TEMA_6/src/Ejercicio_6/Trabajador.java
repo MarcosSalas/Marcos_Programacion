@@ -1,15 +1,22 @@
 package Ejercicio_6;
 
-public class Trabajador {
+public class Trabajador extends Persona {
+
+
+    public Trabajador(String nombre, String apellido, String dni) {
+        super(nombre, apellido, dni);
+    }
+
+    public Trabajador() {
+    }
+
+    @Override
+    public void mostrarDatos() {
+        super.mostrarDatos();
+    }
 
 
 
-    /*
 
-    Atributos: nombre, apellido, dni
-    Constructor: todos los datos
-    Métodos: mostrarDatos, getter y setter
-
-    */
 
 }

@@ -17,21 +17,33 @@ public class Persona {
     public void mostrarDatos(){
         System.out.println("Nombre "+nombre);
         System.out.println("Apellido "+apellido);
-        System.out.println("Dni");
-        System.out.println();
-
+        System.out.println("Dni "+dni);
     }
 
+    public String getNombre() {
+        return nombre;
+    }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
+    public String getApellido() {
+        return apellido;
+    }
 
-    /*
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
 
-    Atributos: nombre, apellido, dni
-    Constructor: todos los datos
-    Métodos: mostrarDatos, getter y setter
+    public String getDni() {
+        return dni;
+    }
 
-    */
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
 
 
 }
