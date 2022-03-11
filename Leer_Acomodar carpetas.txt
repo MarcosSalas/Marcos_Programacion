@@ -1,0 +1,1 @@
+Para pasar un ejercicio tengo que pasar el proyecto a la carpeta(package) y meterlo dentro de src.
