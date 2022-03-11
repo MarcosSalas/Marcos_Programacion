@@ -4,11 +4,11 @@ public class DVD extends Elemento {
 
     int anioEdicion;
     String director,actores;
-    private Tipo genero;
+    private TipoDVD genero;
 
 
 
-    public DVD(int id, String seccion, String titulo, boolean estado, int anioEdicion, String director, String actores, Tipo genero) {
+    public DVD(int id, String seccion, String titulo, boolean estado, int anioEdicion, String director, String actores, TipoDVD genero) {
         super(id, seccion, titulo, estado);
         this.anioEdicion = anioEdicion;
         this.director = director;
@@ -43,11 +43,11 @@ public class DVD extends Elemento {
         this.actores = actores;
     }
 
-    public Tipo getGenero() {
+    public TipoDVD getGenero() {
         return genero;
     }
 
-    public void setGenero(Tipo genero) {
+    public void setGenero(TipoDVD genero) {
         this.genero = genero;
     }
 

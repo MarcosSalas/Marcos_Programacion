@@ -1,13 +1,13 @@
 package Ejercicio_6;
 
-public enum Tipo {
+public enum TipoDVD {
 
     intriga("Intriga"),terror("Terror"),comedia("Comedia"),drama("Drama");
 
 
     String nombre;
 
-    Tipo(String nombre){
+    TipoDVD(String nombre){
         this.nombre=nombre;
 
     }
