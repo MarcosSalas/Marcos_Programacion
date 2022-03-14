@@ -1,9 +1,9 @@
 package Ejercicio_6;
 
-public class DVD extends Elemento {
+public final class DVD extends Elemento { // se puede Consultar pero no se puede prestar
 
-    int anioEdicion;
-    String director,actores;
+    private int anioEdicion;
+    private String director,actores;
     private TipoDVD genero;
 
 
@@ -17,6 +17,11 @@ public class DVD extends Elemento {
     }
 
     public DVD() {
+    }
+
+    @Override
+    public void mostrarDatos() {  //**Falta complertar
+        super.mostrarDatos();
     }
 
     public int getAnioEdicion() {

@@ -1,9 +1,9 @@
 package Ejercicio_6;
 
-public class Libro extends Elemento{
+public class Libro extends Elemento implements Prestar{
 
-    String isbn,autor,editorial;
-    int paginas;
+    private String isbn,autor,editorial;
+    private int paginas;
 
 
     public Libro(int id, String seccion, String titulo, boolean estado, String isbn, String autor, String editorial, int paginas) { /*Constructor: todos los parámetros es esto */
@@ -16,17 +16,16 @@ public class Libro extends Elemento{
 
     public Libro() {}
 
-
-    public void mostrarDatos(){
-        System.out.println("ID "+id);
-        System.out.println("Seccion "+seccion);
-        System.out.println("titulo "+titulo);
-        System.out.println("Estado "+estado);
+    @Override
+    public void mostrarDatos() {
+        super.mostrarDatos();
         System.out.println("ISBN " +isbn);
         System.out.println("Autor "+autor);
         System.out.println("Editorial "+editorial);
         System.out.println("Paginas "+paginas);
     }
+
+
 
     public String getIsbn() {
         return isbn;
@@ -61,7 +60,14 @@ public class Libro extends Elemento{
     }
 
 
+    @Override
+    public boolean prestar() {
+        // FALTA COMPLETAR
+        return false;
+    }
 
-
-
+    @Override
+    public boolean devolver() {
+        return false;
+    }
 }

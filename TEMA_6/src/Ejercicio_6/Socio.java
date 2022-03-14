@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Socio extends Persona implements Prestar {
 
 
-    int nroSocio;
-    ArrayList <Prestar> prestarArrayList; //PARA QUE EL BOOLEAN DE PRESTAR SE PUEDA USAR TEGO QUE PONER LA IMPLEMENTACION ARRIBA
+    private int nroSocio;
+    private ArrayList <Prestar> prestarArrayList; //PARA QUE EL BOOLEAN DE PRESTAR SE PUEDA USAR TEGO QUE PONER LA IMPLEMENTACION ARRIBA
 
 
     public Socio(String nombre, String apellido, String dni, int nroSocio, ArrayList<Prestar> prestarArrayList) {
@@ -18,6 +18,13 @@ public class Socio extends Persona implements Prestar {
     public Socio() {
     }
 
+    @Override
+    public void mostrarDatos() {
+        super.mostrarDatos();
+        System.out.println(nroSocio);
+        System.out.println("Prestamos");
+                                                // ***********        Falta completar
+    }
 
     public Socio(String nombre, String apellido, String dni){//PARA GENERAR EL NRO DE SOCIO EN LA BIBLIOTECA
 

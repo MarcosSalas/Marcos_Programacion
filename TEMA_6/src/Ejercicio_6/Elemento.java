@@ -1,10 +1,10 @@
 package Ejercicio_6;
 
-public class Elemento {
+public abstract class Elemento { //Abstracto porque quiero que exista un cd ,un dvd, un libro, pero no un Elemento
 
-    public int id;
-    public String seccion,titulo;
-    public boolean estado;
+    protected int id;
+    protected String seccion,titulo;
+    protected boolean estado;
 
     public Elemento(int id, String seccion, String titulo, boolean estado) {
         this.id = id;
@@ -15,6 +15,17 @@ public class Elemento {
 
 
     public Elemento(){};
+
+    public void mostrarDatos(){
+        System.out.println("ID "+id);
+        System.out.println("Seccion "+seccion);
+        System.out.println("titulo "+titulo);
+        System.out.println("Estado "+estado);
+
+    }
+
+
+
 
     public int getId() {
         return id;

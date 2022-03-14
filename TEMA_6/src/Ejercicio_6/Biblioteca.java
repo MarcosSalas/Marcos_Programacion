@@ -5,17 +5,18 @@ import java.util.ArrayList;
 public class Biblioteca {
 
 
-    ArrayList<Persona>personaArrayList;
-    ArrayList<Elemento>elementoArrayList;
+    private ArrayList<Persona>personaArrayList;
+    private ArrayList<Elemento>elementoArrayList;
+    private int nroSocio=0;
 
-    public Biblioteca(ArrayList<Persona> personaArrayList, ArrayList<Elemento> elementoArrayList) {
+    public Biblioteca() {
         this.personaArrayList = personaArrayList;
         this.elementoArrayList = elementoArrayList;
     }
-    public Biblioteca(){}
+
 
     public void registrarPersona(Persona persona){
-        personaArrayList.add(persona);
+        personaArrayList.add(persona);  //En la entrada new socio,new trabahjador
         System.out.println("Persona agregada con éxito");
 
     }
@@ -27,9 +28,9 @@ public class Biblioteca {
     }
 
 /*Realizar préstamo. Pide como parámetro un socio y un elemento alquilable. Si el elemento no está prestado se le prestará al socio y se le asociará a su lista. De no ser así se mostrará un mensaje*/
-    public void realizarPrestamo(Socio socio , Elemento alquilable){
-        if (!(alquilable ==elementoArrayList(alquilable.id))) {
-            socio.prestarArrayList.add(socio.prestar());                       //VER SI ESTÁ BIEN
+    public void realizarPrestamo(Socio socio , Elemento alquilable){  // VER GIT NOS DARIA TODO LO DE PRESTABLE PERO TAMBIEN TODOS LOS ATRIBUTOS DE ELEMENTO NECESARIO PARA
+        if (!(alquilable ==elementoArrayList(alquilable.id))) {      //
+            socio.prestarArrayList.add(socio.prestar());                       //EL PRESTABLE.PRESTAR() PONE EL VALOR OPUESTO DEL QUE ESTÁ.
         }else {
             System.out.println("Ese elemento ya está prestado");
         }
