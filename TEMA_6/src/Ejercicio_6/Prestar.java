@@ -1,6 +1,6 @@
 package Ejercicio_6;
 
-public interface Prestamos {
+public interface Prestar {
 
    boolean prestar() ;
    boolean devolver();

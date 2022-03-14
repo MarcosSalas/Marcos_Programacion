@@ -3,7 +3,7 @@ package Ejercicio_6;
 public class CD extends Elemento{
 
     int anioEdicion;
-    private TipoCD valores;
+    private TipoCD valores; // variable de tipo TipoCD... con el nombre de valores
 
     public CD(int id, String seccion, String titulo, boolean estado, int anioEdicion, TipoCD valores) {
         super(id, seccion, titulo, estado);
@@ -12,6 +12,11 @@ public class CD extends Elemento{
     }
 
     public CD() {    }
+
+
+
+
+
 
     public int getAnioEdicion() {
         return anioEdicion;
@@ -28,9 +33,6 @@ public class CD extends Elemento{
     public void setValores(TipoCD valores) {
         this.valores = valores;
     }
-
-    
-
 
 
 }
