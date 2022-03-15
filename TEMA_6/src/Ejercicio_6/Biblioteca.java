@@ -29,7 +29,7 @@ public class Biblioteca {
 
 /*Realizar préstamo. Pide como parámetro un socio y un elemento alquilable. Si el elemento no está prestado se le prestará al socio y se le asociará a su lista. De no ser así se mostrará un mensaje*/
     public void realizarPrestamo(Socio socio , Elemento alquilable){  // VER GIT NOS DARIA TODO LO DE PRESTABLE PERO TAMBIEN TODOS LOS ATRIBUTOS DE ELEMENTO NECESARIO PARA
-        if (!(alquilable ==elementoArrayList(alquilable.id))) {      //
+        if (!(alquilable ==elementoArrayList(alquilable.id))) {      // EL IF QUE TIENE ES PARA ADERIR UN SOCIO Y DARLE NUMERO DE SOCIO  LO ADIERE A TRAVES DE LA BIBIOTECA, DEBAJO DEL IF, SI ES TRABAJADOR DIRECTAMENTE
             socio.prestarArrayList.add(socio.prestar());                       //EL PRESTABLE.PRESTAR() PONE EL VALOR OPUESTO DEL QUE ESTÁ.
         }else {
             System.out.println("Ese elemento ya está prestado");
