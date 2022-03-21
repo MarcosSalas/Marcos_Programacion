@@ -1,6 +1,6 @@
 package Partido;
 
-public class Partido {
+public final class Partido {
 
     private boolean jugado ;
     private int golesLocal, golesVisitante;
@@ -15,14 +15,20 @@ public class Partido {
     public Partido(){}
 
 
+ //public agregarGolesLocal{
 
-    public agregarGolesLocal{
+//  }//
+
+
+
+    public class Equipo{
+        String nombre;
+        int puntos;
+
+
+
 
     }
-
-
-
-    public class Equipo{    }
 
 
 
