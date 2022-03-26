@@ -1,4 +1,4 @@
-package Ejemplo;
+package Tema7_Explicacion.ClasesAbC;
 
 public class ClaseB extends  ClaseA {
 

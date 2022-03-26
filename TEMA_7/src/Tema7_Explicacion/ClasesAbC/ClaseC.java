@@ -1,4 +1,4 @@
-package Ejemplo;
+package Tema7_Explicacion.ClasesAbC;
 
 public class ClaseC { //NO EXTIENDE,REGISTRA MENSAJE
     public void registrarMensaje(ClaseA claseA){

@@ -1,4 +1,4 @@
-package Ejemplo;
+package Tema7_Explicacion.ClasesAbC;
 
 public abstract class ClaseA { //abstracta no se puede inplementar
     public void mostrarMensaje(){
