@@ -2,19 +2,17 @@ package Inventario;
 
 import java.util.ArrayList;
 
-public class SupermercadoEspecífico<V,T> {
+public class SupermercadoEspecifico<V,T> extends Par implements Elementos<T> {
 
     ArrayList <V> ArrayElementos;
 
-    public SupermercadoEspecífico(Alimento alimento) {
+    public SupermercadoEspecifico(V cosas ) {
         this.ArrayElementos=new ArrayList<>();
     }
-    public void registrarElemento(T registrar){
-    ArrayElementos.add((V) registrar);
-    }
 
 
-    public SupermercadoEspecífico() {
+
+    public SupermercadoEspecifico() {
 
     }
 
@@ -26,8 +24,17 @@ public class SupermercadoEspecífico<V,T> {
                 precioFinal += ((Alimento) alimentos).getPrecio();
             }
 
+            if (alimentos instanceof Mueble ) {
+                precioFinal += ((Mueble) alimentos).getPrecio();
+            }
+
         }
 
 
+    }
+
+    @Override
+    public void registrarElemento(T element) {
+        ArrayElementos.add((V) element);
     }
 }

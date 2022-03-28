@@ -1,6 +1,6 @@
 package Inventario;
-
-public class Alimento implements Inventariable { //Abstracto, porque quiero que exista un los hijos pero no Alimento
+/* LO ABSTRACTO LO PUSE A LO ULTIMO DEL EJERCICIO CASI,DESPUES DE HACER LAS IMPLEMENTACIONES Y LAS EXTENCIONES DE V -T*/
+public abstract class Alimento extends Par implements Inventariable { //Abstracto, porque quiero que exista un los hijos pero no Alimento
    //variables
     protected String calidad,origen;  //protected,se puede poner o no,es para cuando heredan los hijos los mismos valores
     protected int precio;

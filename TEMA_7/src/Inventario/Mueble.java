@@ -1,6 +1,6 @@
 package Inventario;
-
-public abstract class Mueble implements Inventariable { //Abstract x que quiero que se muestre las clases,silla,mesa,pero no mueble
+/* LO ABSTRACTO LO PUSE A LO ULTIMO DEL EJERCICIO CASI,DESPUES DE HACER LAS IMPLEMENTACIONES Y LAS EXTENCIONES DE V -T*/
+public abstract class Mueble extends Par implements Inventariable { //Abstract x que quiero que se muestre las clases,silla,mesa,pero no mueble
 //variables
     protected String material,peso; //protected porque solamente la heredan las clases hijas
     protected int precio;
