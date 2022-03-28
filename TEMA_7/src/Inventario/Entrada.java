@@ -38,9 +38,6 @@ public class Entrada {
 
 
 
-
-
-
         Mesa mesaMadera =new Mesa("Madera ","10kg ",20 ,6);
         Mesa mesaVidrio=new Mesa("Vidrio ", "15kg ", 50 , 8);
         Silla sillaMadera=new Silla("Madera ", "4kg ",6 ,4);
@@ -64,7 +61,7 @@ public class Entrada {
 
 
 
-        // System.out.println("Ver pecio alimento 1") ; solomillo.calcularPrecio();//PARA PODER SACAR EL PRECIO DEL ALIMENTO SE DEBE CASTEAR EN EL MAIN.NO SE ACCEDE DIRECTAMENTE
+         System.out.println("Ver pecio alimento 1") ; solomillo.calcularPrecio();//PARA PODER SACAR EL PRECIO DEL ALIMENTO SE DEBE CASTEAR EN EL MAIN.NO SE ACCEDE DIRECTAMENTE
 
      //   SupermercadoEspecifico supermercadoEspecifico=new SupermercadoEspecifico<>();
        // supermercadoEspecifico.mostrarPreciosFinales(); //VER COMO MOSTRAR TODOS LOS DATOS

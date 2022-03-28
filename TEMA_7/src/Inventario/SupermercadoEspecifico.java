@@ -11,7 +11,19 @@ public class SupermercadoEspecifico<V,T> extends Par implements Elementos<T> {//
     }
 
 
+public  void mostrartodos(){
+    for (V item:ArrayElementos) {
+        if (item instanceof Alimento) {
 
+             ((Alimento) item).mostrarDatosAlimento();
+        }
+
+        if (item instanceof Mueble ) {
+            ((Mueble) item).mostrarDatosMueble();
+        }
+    }
+
+}
     public SupermercadoEspecifico() {
 
     }
@@ -28,6 +40,7 @@ public class SupermercadoEspecifico<V,T> extends Par implements Elementos<T> {//
                 precioFinal += ((Mueble) alimentos).getPrecio();
             }
 
+            System.out.println();
         }
 
 
