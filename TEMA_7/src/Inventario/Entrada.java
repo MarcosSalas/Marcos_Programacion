@@ -22,9 +22,9 @@ public class Entrada {
         Lacteo yoghurt=new Lacteo("Excelente","España",3,6);
 
         SupermercadoEspecifico supermercadoAlimento1=new SupermercadoEspecifico<>(solomillo);
-        SupermercadoEspecifico supermercadoAlimento2=new SupermercadoEspecifico<>(solomillo);
-        SupermercadoEspecifico supermercadoAlimento3=new SupermercadoEspecifico<>(solomillo);
-        SupermercadoEspecifico supermercadoAlimento4=new SupermercadoEspecifico<>(solomillo);
+        SupermercadoEspecifico supermercadoAlimento2=new SupermercadoEspecifico<>(lomo);
+        SupermercadoEspecifico supermercadoAlimento3=new SupermercadoEspecifico<>(leche);
+        SupermercadoEspecifico supermercadoAlimento4=new SupermercadoEspecifico<>(yoghurt);
 
 
 
@@ -35,10 +35,10 @@ public class Entrada {
         supermercadoAlimento3.registrarElemento(leche);
         supermercadoAlimento4.registrarElemento(yoghurt);
 
-        System.out.println("Ver pecio alimento 1") ; solomillo.calcularPrecio();//PARA PODER SACAR EL PRECIO DEL ALIMENTO SE DEBE CASTEAR EN EL MAIN.NO SE ACCEDE DIRECTAMENTE
 
 
-        supermercadoAlimento1.mostrarPreciosFinales(); //VER COMO MOSTRAR TODOS LOS DATOS
+
+
 
 
         Mesa mesaMadera =new Mesa("Madera ","10kg ",20 ,6);
@@ -64,7 +64,12 @@ public class Entrada {
 
 
 
+        // System.out.println("Ver pecio alimento 1") ; solomillo.calcularPrecio();//PARA PODER SACAR EL PRECIO DEL ALIMENTO SE DEBE CASTEAR EN EL MAIN.NO SE ACCEDE DIRECTAMENTE
 
+     //   SupermercadoEspecifico supermercadoEspecifico=new SupermercadoEspecifico<>();
+       // supermercadoEspecifico.mostrarPreciosFinales(); //VER COMO MOSTRAR TODOS LOS DATOS
+
+      //  SupermercadoEspecifico.mostrarPreciosFinales();
 
 
 

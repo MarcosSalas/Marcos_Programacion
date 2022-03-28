@@ -12,9 +12,9 @@ public class SupermercadoEspecifico<V,T> extends Par implements Elementos<T> {//
 
 
 
-   /* public SupermercadoEspecifico() {
+    public SupermercadoEspecifico() {
 
-    }*/
+    }
 
     public void mostrarPreciosFinales(){
         int precioFinal = 0;
