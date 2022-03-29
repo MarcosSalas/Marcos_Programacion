@@ -1,4 +1,4 @@
-package excepciones;
+package Explicacion.excepciones;
 
 public class Entrada {
     public static void main(String[] args) {
