@@ -2,7 +2,7 @@ package Inventario;
 
 public final class Lacteo extends Alimento {
 //variables
-    private int volumen;
+    private int volumen; //corregido en clase lo de private,esta bien como puse en el apunte
 //constructores
     public Lacteo(String calidad, String origen, int precio, int volumen) {
         super(calidad, origen, precio);

@@ -3,8 +3,9 @@ package Inventario;
 public final class Silla extends Mueble {//final porque no hereda nadie
     //variables
     private int patas; //private porque no extiende nadie
-    //constructores
+    //siempre q pongo abstract es protected ,siempre q pongo final pongo private
 
+    //constructores
     public Silla(String material, String peso, int precio, int patas) {
         super(material, peso, precio);
         this.patas = patas;

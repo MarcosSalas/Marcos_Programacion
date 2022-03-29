@@ -1,10 +1,12 @@
 package Inventario;
 
 import java.util.ArrayList;
+//ME FALTO PONERLE EL FINAL
+//Tengo que sacar la T..VER
 
-public class SupermercadoEspecifico<V,T> extends Par implements Elementos<T> {//la primera V es el valor que recibo,la T es el calor que tengo que declarar para despues poder enviar con la 2da T
-
-    ArrayList <V> ArrayElementos;
+public final class  SupermercadoEspecifico<V,T> implements Elementos<T> {//la primera V es el valor que recibo,la T es el calor que tengo que declarar para despues poder enviar con la 2da T
+    //ME FALTO PONERLE EL private
+    private ArrayList <V> ArrayElementos;
 
     public SupermercadoEspecifico(V cosas ) {
         this.ArrayElementos=new ArrayList<>();
@@ -18,7 +20,7 @@ public  void mostrartodos(){
              ((Alimento) item).mostrarDatosAlimento();
         }
 
-        if (item instanceof Mueble ) {
+        else if (item instanceof Mueble ) {
             ((Mueble) item).mostrarDatosMueble();
         }
     }
@@ -29,25 +31,25 @@ public  void mostrartodos(){
     }
 
     public void mostrarPreciosFinales(){
-        int precioFinal = 0;
+        double precioFinal = 0; //CORREGIDO EN CLASES
         for (V alimentos:ArrayElementos) {
 
             if (alimentos instanceof Alimento) {
                 precioFinal += ((Alimento) alimentos).getPrecio();
             }
 
-            if (alimentos instanceof Mueble ) {
+            else if (alimentos instanceof Mueble ) {
                 precioFinal += ((Mueble) alimentos).getPrecio();
             }
 
-            System.out.println();
+            System.out.println(precioFinal);//CORREGIDO EN CLASES
         }
 
 
     }
 
     @Override
-    public void registrarElemento(T element) {
+    public void registrarElemento(T element) { // esto mismo se puede hacer en la misma clase porque estoy agregando ina interface de mas pudiendolo resolver desde aca
         ArrayElementos.add((V) element);
     }
 }

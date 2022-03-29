@@ -1,9 +1,9 @@
 package Inventario;
 /* LO ABSTRACTO LO PUSE A LO ULTIMO DEL EJERCICIO CASI,DESPUES DE HACER LAS IMPLEMENTACIONES Y LAS EXTENCIONES DE V -T*/
-public abstract class Alimento extends Par implements Inventariable { //Abstracto, porque quiero que exista un los hijos pero no Alimento
+public abstract class Alimento implements Inventariable { //Abstracto, porque quiero que exista un los hijos pero no Alimento
    //variables
     protected String calidad,origen;  //protected,se puede poner o no,es para cuando heredan los hijos los mismos valores
-    protected int precio;
+    protected double precio;
 //construcctores
 
     public Alimento(String calidad, String origen, int precio) {
@@ -46,8 +46,12 @@ public abstract class Alimento extends Par implements Inventariable { //Abstract
         this.origen = origen;
     }
 
-    public int getPrecio() {
+    public double getPrecio() {
         return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
     }
 
     public void setPrecio(int precio) {
@@ -55,8 +59,10 @@ public abstract class Alimento extends Par implements Inventariable { //Abstract
     }
 
     @Override
-    public void calcularPrecio() {
-        precio=this.precio*Inventariable.IVA_ALIMENTOS; //VER SI EL THIS.PRECIO ESTÁ BIEN
+    public void calcularPrecio() {// COMO LOS HIJOS REQUIEREN DE ESTAS CALASES SE PONEN PARA QUE SE PUEDAN HEREDAR
+        setPrecio(this.precio+(this.precio*Inventariable.IVA_ALIMENTOS)); //corragido en clase
+       //si pones el Set aca ,no hace FALTA PASARLO ARRIBA COMO HIZO ALEX,SINO SI
+        //el set Precio le digo lo que quiero que tenga la variable precio
         System.out.println("Precio Final "+ precio);
     }
 

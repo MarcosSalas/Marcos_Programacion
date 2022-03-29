@@ -35,6 +35,7 @@ public class Entrada {
         supermercadoAlimento3.registrarElemento(leche);
         supermercadoAlimento4.registrarElemento(yoghurt);
 
+        solomillo.calcularPrecio(); //CORREGIDO EN CLASES
 
 
 
@@ -48,7 +49,7 @@ public class Entrada {
         SupermercadoEspecifico supermercadoMuebles3=new SupermercadoEspecifico(sillaMadera);
         SupermercadoEspecifico supermercadoMuebles4=new SupermercadoEspecifico(sillaPlastico);
 
-        SupermercadoEspecifico<Mueble,Mesa> listaMueble=new SupermercadoEspecifico<Mueble,Mesa>(mesaMadera);
+        SupermercadoEspecifico<Mueble,Mesa> listaMueble=new SupermercadoEspecifico<Mueble,Mesa>(mesaMadera);  // ***** TENGO QUE CORREGIR,VER BIEN DESPUES  *****
         SupermercadoEspecifico<Alimento,Lacteo>lacteoSupermerE=new SupermercadoEspecifico<Alimento,Lacteo>(leche);
 
 
@@ -59,7 +60,7 @@ public class Entrada {
 
 
 
-
+        mesaMadera.calcularPrecio(); //CORREGIDO EN CLASES
 
          System.out.println("Ver pecio alimento 1") ; solomillo.calcularPrecio();//PARA PODER SACAR EL PRECIO DEL ALIMENTO SE DEBE CASTEAR EN EL MAIN.NO SE ACCEDE DIRECTAMENTE
 
