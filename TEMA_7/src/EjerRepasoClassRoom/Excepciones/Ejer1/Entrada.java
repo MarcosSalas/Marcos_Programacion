@@ -17,7 +17,7 @@ public class Entrada {
             System.out.println("Ingrese el nro");
             ingTexto=new Scanner(System.in);
             numUsuario = ingTexto.nextInt();
-            
+
         }catch(InputMismatchException e) {
                 System.out.println(e.getMessage());
         }
