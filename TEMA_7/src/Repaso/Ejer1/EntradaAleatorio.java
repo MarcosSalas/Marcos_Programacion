@@ -20,7 +20,7 @@ public class EntradaAleatorio {
                 scanner = new Scanner(System.in);
                 numeroIntroducido = scanner.nextInt();
                 if (numeroIntroducido < 0) {
-                    throw new ExceptionNumero("Numero inferior a 0");
+                    throw new ExceptionNumero("Numero inferior a 0"); //El ExceptionNumero es un mensaje que lo generamos 
                 }
             } catch (InputMismatchException | ExceptionNumero e) { // De donde sale este  ### NUNullPointerException
                 System.out.println(e.getMessage());                 //EL InputMismatchException se que sale de la letra
