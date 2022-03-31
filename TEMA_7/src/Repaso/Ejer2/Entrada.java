@@ -80,8 +80,10 @@ public class Entrada {
                         if (vuelta==true){
                             System.out.println("transacción completa, ya No dispone de saldo");
                         }else {
+                            System.out.println("#####     NO ME SALIO ESTA PARTE     #############");
+
                             System.out.println("Ver si entra");
-                          
+
 
                             break;
 
