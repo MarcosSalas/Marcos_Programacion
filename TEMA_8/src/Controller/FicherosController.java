@@ -52,11 +52,18 @@ public class FicherosController {
                 System.out.println(fichero.getName());
             }
 
-
-
-
-
         }
+
+
+
+
+
+
     }
 
+    public void lecturaFichero(File file) {
+    }
+
+    public void lecturaBuffer(File file) {
+    }
 }
