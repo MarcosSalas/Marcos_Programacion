@@ -26,8 +26,8 @@ public class Entrada {
 
 
         restaurante01.verPedidos();
-
-
+        restaurante0.verPedidos();
+        restaurante2.verFactura();
 
     }
 
