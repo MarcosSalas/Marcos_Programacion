@@ -19,16 +19,17 @@ public final class Cuenta {
         saldo -= dineroMet;
     }
     public boolean retirTodo(boolean retTodo){
+    //    System.out.println("ver RETIRARTODO "+retTodo);
 
         if (retTodo==true && saldo>0){
          //   System.out.println("Su saldo  ANTES "+saldo);
             saldo-=saldo;
-        //    System.out.println("Su saldo es DESPUÉS "+saldo);
+            System.out.println("Dinero retirado,su saldo Actual es "+saldo);
             return retTodo;
 
         }else {
-
             retTodo=false;
+            System.out.println("Operación cancelada,su saldo Actual es "+saldo);
             return retTodo;
         }
     }

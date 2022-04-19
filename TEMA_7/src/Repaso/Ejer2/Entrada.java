@@ -73,33 +73,21 @@ public class Entrada {
                     } catch (ExceptionSaldo e) {
                         System.out.println(e.getMessage());
                         System.out.println("Su saldo es de "+cuenta.saldo);
+
+                       // System.out.println("El retirar TODO ANTES "+retirarTodo);
                         System.out.println("¿Desea retirar todo el dinero? true-si false-no");
-                        retirarTodo= scanner.hasNextBoolean();
+                        retirarTodo=scanner.nextBoolean();
+                       // System.out.println("El retirar TODO DESPUES "+retirarTodo);
                         cuenta.retirTodo(retirarTodo);
-                        vuelta=cuenta.retirTodo(retirarTodo);
-                        if (vuelta==true){
-                            System.out.println("transacción completa, ya No dispone de saldo");
-                        }else {
-                            System.out.println("#####     NO ME SALIO ESTA PARTE     #############");
+                      //  vuelta=cuenta.retirTodo(retirarTodo);
 
-                            System.out.println("Ver si entra");
+                    //    System.out.println("Esto es vuelta VER SI MODIFICO "+retirarTodo);
 
-
-                            break;
-
-                        }
                     }
-
-
-
-
 
                     catch (ExceptionSaldo1 e) {
                         System.out.println(e.getMessage());
                         System.out.println("Su saldo es de "+cuenta.saldo);
-
-
-
                     }
 
 
@@ -109,7 +97,6 @@ public class Entrada {
 
                     break;
             }
-
 
         } while (opcion!=3) ;
 

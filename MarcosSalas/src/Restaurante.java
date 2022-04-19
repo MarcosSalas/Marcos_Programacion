@@ -47,15 +47,6 @@ public class Restaurante<T> {
     }
 
 
-
-
-
-
-
-
-
-
-
     public void verPedidos(){
         for ( T item : listaPedidos ) {
             if (item instanceof PedidoComida){
@@ -68,15 +59,6 @@ public class Restaurante<T> {
         }
         System.out.println(caja);
     }
-
-
-
-
-
-
-
-
-
 
 
 
