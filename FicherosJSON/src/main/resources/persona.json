@@ -1,0 +1,35 @@
+{
+  "nombre": "Borja",
+  "apellido": "Martin Herrera",
+  "edad": 38,
+  "hobbies": [
+    "musica",
+    "deporte",
+    "cine",
+    "informática"
+  ],
+  "conocimiento": [
+    {
+      "concepto": "programación",
+      "experiencia": 12,
+      "detalle": [
+        "java",
+        "html",
+        "css",
+        "javascript",
+        "mysql",
+        "powersell"
+      ]
+    }
+  ],
+  "conocimiento": [
+    {
+      "concepto": "3d",
+      "experiencia": 4,
+      "detalle": [
+        "Maya","3DMax","Blender","Unity"
+      ]
+    }
+  ]
+}
+
