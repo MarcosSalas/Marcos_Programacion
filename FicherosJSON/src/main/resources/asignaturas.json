@@ -1,6 +1,6 @@
 {
   "asignaturas": [
-    [
+
       {
         "siglas": "PMDM",
         "nombre": "Programación Multimedia",
@@ -155,5 +155,5 @@
         "conocimientos": ["trabajo personal"]
       }
     ]
-  ]
+  
 }
