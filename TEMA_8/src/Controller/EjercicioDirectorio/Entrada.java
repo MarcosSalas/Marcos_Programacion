@@ -6,8 +6,8 @@ import java.io.File;
 
 public class Entrada {
     public static void main(String[] args) {
-
-
+        // RUTA DE CASA
+        //C:\Users\marco\OneDrive\Escritorio\ficheros
         File file=null;
         file = new File("C:\\Users\\Usuario DAM1\\Desktop\\Ficheros\\FicheroEjemplo.txt");
 
