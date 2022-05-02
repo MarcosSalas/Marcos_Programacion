@@ -1,3 +1,3 @@
-public enum tipoBebidas {
+public enum Bebidas {
     Copas, Cervezas,Referescos
 }

@@ -1,6 +1,3 @@
-public enum tipoComida {
+public enum Comidas {
     Menu, Racciones,Bocadillo;
-
-
-
 }
