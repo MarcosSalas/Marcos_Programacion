@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cd49f456-377a-41aa-9e0c-6d3be447dce0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../TEMA_8_File_y_Binario/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TEMA_8_File_y_Binario/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TEMA_8_File_y_Binario/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TEMA_8_File_y_Binario/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TEMA_8_File_y_Binario/TEMA_8_File_y_Binario.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TEMA_8_File_y_Binario/src/Binario/EntradaEjercicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TEMA_8_File_y_Binario/src/Binario/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TEMA_8_File_y_Binario/src/Binario/controller/BinariosController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TEMA_8_File_y_Binario/src/Binario/controller/EjercicioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TEMA_8_File_y_Binario/src/Binario/model/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TEMA_8_File_y_Binario/src/Binario/resources/objetos.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TEMA_8_File_y_Binario/src/Binario/resources/usuarios.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TEMA_8_File_y_Binario/src/File/Entrada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TEMA_8_File_y_Binario/src/File/controller/EjercicioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TEMA_8_File_y_Binario/src/File/controller/FicherosController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/JSONController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Asignaturas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Conocimiento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Profesor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/asignaturas.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/persona.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/asignaturas.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/controller/JSONController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/model/Asignaturas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/model/Conocimiento.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/model/Profesor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/persona.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28rNIzeEYPENx1dKOChzV8BRm3r" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TEMA_8" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Json-Gson" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1996689e-5ffa-4a56-85a1-9a2116fc9a17" name="Changes" comment="" />
+      <created>1651970669612</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651970669612</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
