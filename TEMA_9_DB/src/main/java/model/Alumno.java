@@ -1,0 +1,11 @@
+package model;
+
+public class Alumno {
+    String nombre;
+    String apellido;
+    int edad;
+
+
+
+
+}
