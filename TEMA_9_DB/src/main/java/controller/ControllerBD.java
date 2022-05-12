@@ -1,17 +1,24 @@
 package controller;
 
 import DataBase.SchemeDB;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
 public class ControllerBD {
-    private Connection conn;
-    // no comprueba tipos
-    private Statement statement;
 
-    public  void getConecion(){
+    private Connection conn; /*#ITEM 2 lo de la Izquierda, Sustituye esto Connection conn = null;  que estaba debajo de String pass = SchemeDB.COL_PASS;*/
+    // no comprueba tipos
+    private Statement statement; /*Me lo creo acá arriba para reutilizarlo en otros lugares*/
+
+
+/* #ITEM5 como los métodos getConecion-closeConnection solo van a ser llamados
+ de la misma controladora y no de otro lado SON Private */
+
+    private void getConecion() { /*ESTE MÉTODO LO QUE VA A HACER ES ABRIR LA CONECCION*/
+        /*
         String host = SchemeDB.URL_SERVER;
         String dtbs = SchemeDB.DB_NAME;
         String user = "root";
@@ -27,35 +34,69 @@ public class ControllerBD {
             System.out.println(conn.getCatalog());
         } catch (SQLException e) {
             e.printStackTrace();
+        }*/
+        String host = SchemeDB.URL_SERVER;
+        String dtbs = SchemeDB.DB_NAME;
+        String user = SchemeDB.COL_USER;
+        String pass = SchemeDB.COL_PASS;
+
+
+        /*#ITEM 1*/
+        String newConnectionURL = "jdbc:mysql://" + host + "/" + dtbs
+                + "?" + "user=" + user + "&password=" + pass;
+
+        try {
+            conn = (Connection) DriverManager.getConnection(newConnectionURL);
+            System.out.println(conn.getCatalog());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
     }
-    private void closeConnection(){
+
+    /*En el min 33:43 esta como publico el método close y luego pasa a privado*/
+    private void closeConnection() {
+        /* #ITEM 3 */
         try {
-            if (conn!= null){
+            if (conn != null) {
                 conn.close();
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
+
+
+/*#ITEM 6 */
     public void insertarAlumnoStatement() {
         String nombre = "Borja";
         String apellido = "Martin";
-        int  edad = 38;
+        int edad = 38;
         // INSERT INTO alumnos (nombre, apellido, edad) VALUES ('BORJA','MARTIN',38)
+        // a)  ABRO CONECCIÓN  # ITEM 7 (pertenece al a),b),c) lo que decia el #ITEM 4)
         try {
             getConecion();
+            //b) ACTÚO
             statement = conn.createStatement();
-            String query = "INSERT INTO"+ SchemeDB.TAB_ALU+" ("+SchemeDB.COL_NOMBRE+","+ SchemeDB.COL_APELLIDO+","+ SchemeDB.COL_EDAD+") " +
-                    "VALUES ('"+nombre+"','"+apellido+"',"+edad+")";
-            String queryFormat = String.format("INSERT INTO %s (%s, %s, %s) VALUES ('%s','%s',%d)",SchemeDB.TAB_ALU,
-                    SchemeDB.COL_NOMBRE,SchemeDB.COL_APELLIDO,SchemeDB.COL_EDAD,
-                    nombre,apellido,edad);
+            String query = "INSERT INTO" + SchemeDB.TAB_ALU + " (" + SchemeDB.COL_NOMBRE + "," + SchemeDB.COL_APELLIDO + "," + SchemeDB.COL_EDAD + ") " +
+                    "VALUES ('" + nombre + "','" + apellido + "'," + edad + ")";
+            String queryFormat = String.format("INSERT INTO %s (%s, %s, %s) VALUES ('%s','%s',%d)", SchemeDB.TAB_ALU,
+                    SchemeDB.COL_NOMBRE, SchemeDB.COL_APELLIDO, SchemeDB.COL_EDAD,
+                    nombre, apellido, edad);
             int numeroRow = statement.executeUpdate(queryFormat);
             //System.out.println(numeroRow);
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
+        }
+        //c) CIERRO CONECCIÓN
+        finally {
             try {
                 statement.close();
             } catch (SQLException e) {
@@ -70,8 +111,6 @@ public class ControllerBD {
     // mediante un modelo
 
 
-
-
     public Connection getConn() {
         return conn;
     }
@@ -83,7 +122,7 @@ public class ControllerBD {
 
 }
 
-    /*
+    /* CLASE VIDEO 1
         //en el caso que no me llegara a tomar el main como Clase tengo que poner en el pom reload proyect de nuevo, si nl crear una clase dentro de test en el pom reload proyect y borramos la clase creada
 
         //## CONECTARSE A BD

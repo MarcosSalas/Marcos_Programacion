@@ -6,8 +6,11 @@ public interface SchemeDB {
     String TAB_ALU= "alumnos";
     String COL_NOMBRE ="nombre";
     String COL_APELLIDO="apellido";
-    String  COL_ID="id";
+    String COL_ID ="id";
     String COL_EDAD="edad";
+    String COL_USER="root";
+    String COL_PASS="";
+
 
 
 
