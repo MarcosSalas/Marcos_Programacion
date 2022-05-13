@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f9e5891a-5321-4b8b-af8d-611e2bf521b7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entrada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EntradaEjer2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EntradaEjer3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ControllerEjer1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ControllerEjer2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ControllerEjer3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Peliculas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Personaje.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/resourses/fichero_cifrado.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MarcosSalas.rar" beforeDir="false" afterPath="$PROJECT_DIR$/../MarcosSalas.rar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MarcosSalas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../MarcosSalas1/MarcosSalas1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MarcosSalas/Constantes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MarcosSalas/ConsumicionBarra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MarcosSalas/Entrada.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MarcosSalas/MyException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MarcosSalas/PedidoComida.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MarcosSalas/Producto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MarcosSalas/Restaurante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MarcosSalas/tipoBebidas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MarcosSalas/tipoComida.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEMA_9_DB/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TEMA_9_DB/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="28jejdrQz5kGNz5laP9hq9Cw6C5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TEMA_9_DB" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="Application.EntradaEjer2">
+    <configuration name="Entrada" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Entrada" />
+      <module name="MarcosSalas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntradaEjer2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EntradaEjer2" />
+      <module name="MarcosSalas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EntradaEjer2" />
+        <item itemvalue="Application.Entrada" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f9e5891a-5321-4b8b-af8d-611e2bf521b7" name="Changes" comment="" />
+      <created>1651734564795</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651734564795</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
