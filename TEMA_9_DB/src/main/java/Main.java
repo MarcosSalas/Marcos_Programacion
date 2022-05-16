@@ -6,6 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+
         Scanner scanner = new Scanner(System.in);
         String nombre = null, apellido = null, continuar = null;
         int edad = 0;

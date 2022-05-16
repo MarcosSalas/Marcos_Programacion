@@ -10,6 +10,7 @@ public class Alumno1 {
         this.edad=edad;
     }
 
+
     public String getApellido(){
         return apellido;
     }
