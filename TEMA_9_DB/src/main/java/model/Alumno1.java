@@ -1,10 +1,10 @@
 package model;
 
-public class Alumno {
+public class Alumno1 {
     private String nombre,apellido;
     private int edad;
 
-    public Alumno(String nombre, String apellido, int edad){
+    public Alumno1(String nombre, String apellido, int edad){
         this.nombre=nombre;
         this.apellido=apellido;
         this.edad=edad;
@@ -13,9 +13,5 @@ public class Alumno {
     public String getApellido(){
         return apellido;
     }
-
-
-
-
 
 }
