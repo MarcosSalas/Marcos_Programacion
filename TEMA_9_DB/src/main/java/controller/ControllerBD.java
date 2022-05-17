@@ -9,6 +9,7 @@ import java.sql.Statement;
 
 public class ControllerBD {
 
+
     private Connection conn; /*#ITEM 2 lo de la Izquierda, Sustituye esto Connection conn = null;  que estaba debajo de String pass = SchemeDB.COL_PASS;*/
     // no comprueba tipos
     private Statement statement; /*Me lo creo acá arriba para reutilizarlo en otros lugares*/

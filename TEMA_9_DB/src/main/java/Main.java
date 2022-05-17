@@ -1,13 +1,11 @@
 import controller.ControllerBD;
-import DataBase.SchemeDB;
-import model.Alumno;
 
-import java.sql.*;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+
 
         Scanner scanner = new Scanner(System.in);
         String nombre = null, apellido = null, continuar = null;
