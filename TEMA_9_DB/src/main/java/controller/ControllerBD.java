@@ -1,6 +1,7 @@
 package controller;
 
 import DataBase.SchemeDB;
+import model.Alumno;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -93,6 +94,41 @@ public class ControllerBD {
                     nombre, apellido, edad);
             int numeroRow = statement.executeUpdate(queryFormat);
             //System.out.println(numeroRow);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        //c) CIERRO CONECCIÓN
+        finally {
+            try {
+                statement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            closeConnection();
+        }
+    }
+    public void insertarAlumnoStatement(Alumno alumno) {
+        String nombre = alumno.getNombre();
+        String apellido = alumno.getApellido();
+        int edad = alumno.getEdad();
+        // INSERT INTO alumnos (nombre, apellido, edad) VALUES ('BORJA','MARTIN',38)
+        // a)  ABRO CONECCIÓN  # ITEM 7 (pertenece al a),b),c) lo que decia el #ITEM 4)
+        try {
+            getConecion();
+            //b) ACTÚO
+            statement = conn.createStatement();
+            String query = "INSERT INTO" + SchemeDB.TAB_ALU + " (" + SchemeDB.COL_NOMBRE + "," + SchemeDB.COL_APELLIDO + "," + SchemeDB.COL_EDAD + ") " +
+                    "VALUES ('" + nombre + "','" + apellido + "'," + edad + ")";
+            String queryFormat = String.format("INSERT INTO %s (%s, %s, %s) VALUES ('%s','%s',%d)", SchemeDB.TAB_ALU,
+                    SchemeDB.COL_NOMBRE, SchemeDB.COL_APELLIDO, SchemeDB.COL_EDAD,
+                    alumno.getNombre(), alumno.getApellido(), alumno.getEdad());
+
+           // int numeroRow = statement.executeUpdate(queryFormat); ESTO ES PARA SABER LA CANTIDAD
+            //System.out.println(numeroRow);
+
+            if(statement.executeUpdate(queryFormat)>0){// al mismo tiempo que hago la comprobación, hago la ejecución
+                System.out.println("Alumno insertado correctamente");  //ESTO ES PARA SABER SI SE HA HECHO O NO,SI SI MUESTRA EL PRINT
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
