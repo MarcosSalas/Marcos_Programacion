@@ -48,14 +48,14 @@ public void lecturaBinario(){
         Usuario usuario2 = (Usuario) ois.readObject();
         System.out.println(usuario2.toString());*/
 
-        Usuario usuarioLectura=null;
-        try {
-            while ((usuarioLectura = (Usuario) ois.readObject()) != null) {
-                System.out.println(usuarioLectura);
+            Usuario usuarioLectura=null;
+            try {
+                while ((usuarioLectura = (Usuario) ois.readObject()) != null) {
+                    System.out.println(usuarioLectura);
+                }
+            } catch (StreamCorruptedException | EOFException e){ //PREGUNTAR SI ESTÁ BIEN A BORJA
+                System.out.println("Fichero Terminado");
             }
-        } catch (StreamCorruptedException | EOFException e){ //PREGUNTAR SI ESTÁ BIEN A BORJA
-            System.out.println("Fichero Terminado");
-        }
 
     } catch (IOException | ClassNotFoundException e) {
         e.printStackTrace();
