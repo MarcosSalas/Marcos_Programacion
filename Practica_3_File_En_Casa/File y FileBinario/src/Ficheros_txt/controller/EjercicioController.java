@@ -3,7 +3,7 @@ package Ficheros_txt.controller;
 import java.io.*;
 import java.util.Scanner;
 
-public class EjercicioController {
+public class    EjercicioController {
     //lee palabras sueltas
     Scanner scanner = new Scanner(System.in);
     //lee lineas enteras

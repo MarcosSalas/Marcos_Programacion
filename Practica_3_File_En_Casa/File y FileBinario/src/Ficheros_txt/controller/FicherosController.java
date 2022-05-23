@@ -101,6 +101,8 @@ public class FicherosController {
         String lineaEscribir= "Esto es un ejemplo de una linea a escribir dentro del fichero";
 
 
+
+
         String[] letras =lineaEscribir.split("");
         for (String verChar:letras) {
             int codigo =(byte)(verChar.charAt(0));
