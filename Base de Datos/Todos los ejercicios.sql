@@ -855,30 +855,30 @@ INSERT INTO cuentas VALUES(2, 10);
 
 -- Solución 1: Con DECLARE CONTINUE HANDLER ...
 DELIMITER $$
-DROP PROCEDURE IF EXISTS comprar_entrada$$
-CREATE PROCEDURE comprar_entrada(IN nif VARCHAR(9),
-IN id_cuenta INT UNSIGNED,
-IN id_butaca INT UNSIGNED,
-OUT error TINYINT UNSIGNED)
-BEGIN
-DECLARE CONTINUE HANDLER FOR 1264, 1062
-BEGIN
-SET error = 1;
-END;
--- Inicio la transacción
-START TRANSACTION;
-SET error = 0;
--- Cobramos la entrada
-UPDATE cuentas SET saldo = saldo - 5
-WHERE cuentas.id_cuenta = id_cuenta;
--- Reservo la butaca
-INSERT INTO entradas VALUES (id_butaca, nif);
--- Compruebo si ha ocurrido algún error
-IF error = 0 THEN
-COMMIT;
-ELSE
-ROLLBACK;
-END IF;
+	DROP PROCEDURE IF EXISTS comprar_entrada$$
+	CREATE PROCEDURE comprar_entrada(IN nif VARCHAR(9),
+	IN id_cuenta INT UNSIGNED,
+	IN id_butaca INT UNSIGNED,
+	OUT error TINYINT UNSIGNED)
+	BEGIN
+	DECLARE CONTINUE HANDLER FOR 1264, 1062
+	BEGIN
+	SET error = 1;
+	END;
+	-- Inicio la transacción
+	START TRANSACTION;
+	SET error = 0;
+	-- Cobramos la entrada
+	UPDATE cuentas SET saldo = saldo - 5
+	WHERE cuentas.id_cuenta = id_cuenta;
+	-- Reservo la butaca
+	INSERT INTO entradas VALUES (id_butaca, nif);
+	-- Compruebo si ha ocurrido algún error
+	IF error = 0 THEN
+		COMMIT;
+	ELSE
+		ROLLBACK;
+	END IF;
 END
 DELIMITER ;
 CALL comprar_entrada('11111111A', 1, 10, @error);
