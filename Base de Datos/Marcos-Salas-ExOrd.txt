@@ -105,27 +105,3 @@ END $$
 DELIMITER ;
 CALL sumatorio_ids('Almería',@resultado);
 select @resultado;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
